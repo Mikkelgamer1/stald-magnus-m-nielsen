@@ -62,6 +62,7 @@ const BILLEDER = {
   'flise-1': [1, 320, 600],
   'flise-2': [1, 320, 600],
   'flise-3': [1, 320, 600],
+  'side-resultater-bred': [1.5, 1200, 1800, 2400],
 };
 
 const BANER = { Sk: 'Skive', 'Ål': 'Aalborg', 'År': 'Aarhus', Od: 'Odense', Ch: 'Charlottenlund', Bi: 'Billund', Bh: 'Bornholm', Ny: 'Nykøbing F.', Bs: 'Skovbo', Kl: 'Klampenborg' };
@@ -825,8 +826,10 @@ ${sidehoved({
   h1: 'Staldens <em>resultater</em>',
   tekst: `Staldens seneste starter, kommende løb og sæsonens tal. Data kommer fra Dansk Hestevæddeløb og er senest opdateret ${o.opdateret}.`,
   billede: 'side-resultater',
+  bred: 'side-resultater-bred',
   alt: 'Travhest i fuld fart på banen',
   pos: '60% 35%',
+  posBred: '50% 12%',
 })}
 
 <section class="sek sek--tone sek--smal">
