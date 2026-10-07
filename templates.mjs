@@ -132,7 +132,6 @@ function afled(data, idag) {
     kusk,
     opdateret: langDato(data.opdateret),
     seneste: data.resultater.slice(0, 10).map(medNavn),
-    sejre: iAar.filter((r) => r.placering === '1').map(medNavn),
     kommende: data.kommende.filter((k) => k.dato >= idag).map(medNavn),
     banerIAar: Object.entries(antalPrBane).sort((a, b) => b[1] - a[1]).map(([kode]) => bane(kode)),
     banetal: Object.entries(antalPrBane).sort((a, b) => b[1] - a[1]).map(([kode, antal]) => ({ kode, navn: bane(kode), antal })),
@@ -869,20 +868,6 @@ ${sidehoved({
     </aside>
   </div>
 </section>
-${o.sejre.length ? `
-<section class="sek sek--tone">
-  <div class="wrap">
-    <div class="sekhoved">
-      <div>
-        <p class="oje" data-vis>Sæsonens sejre</p>
-        <h2 data-vis style="--i:1">${o.sejre.length} ${o.sejre.length === 1 ? 'sejr' : 'sejre'} <em>i ${o.saeson.aar}.</em></h2>
-      </div>
-    </div>
-    <ol class="sejre" data-vis>${o.sejre.map((r) => `
-      <li><time datetime="${r.dato}">${kortDato(r.dato)}</time><b>${esc(r.hest)}</b><span>${esc(bane(r.bane))}${tid(r.tid) ? ` · ${tid(r.tid)}` : ''}</span></li>`).join('')}
-    </ol>
-  </div>
-</section>` : ''}
 
 <section class="sek sek--mork">
   <div class="wrap">
@@ -892,10 +877,6 @@ ${o.sejre.length ? `
         <h2 data-vis style="--i:1">Sæson <em>for sæson.</em></h2>
       </div>
       <p data-vis style="--i:2">Alle resultater, startlister og detaljer findes hos Dansk Hestevæddeløb.<br>${ekstern(SITE.travinfo, 'Åbn Travinfo', 'knap knap--lys')}</p>
-    </div>
-    <div class="tabeller tabeller--diagram" data-vis>
-      ${soejler('Sejre som træner', data.traenerStatistik)}
-      ${soejler('Sejre som kusk', data.kuskStatistik)}
     </div>
     <div class="tabeller" data-vis>
       ${statTabel('Som træner', data.traenerStatistik)}
