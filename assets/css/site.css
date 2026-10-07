@@ -24,7 +24,7 @@
   --sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 
   --kant: clamp(20px, 4.6vw, 72px);
-  --luft: clamp(80px, 11vw, 176px);
+  --luft: clamp(60px, 7.2vw, 116px);
   --spalte: clamp(20px, 3vw, 48px);
   --max: 1400px;
   --top-fuld: 112px;       /* toppens højde øverst på siden */
@@ -163,7 +163,7 @@ a:hover .ud { transform: translate(2px, -2px); }
 /* ---------- sektioner ---------- */
 
 .sek { padding-block: var(--luft); }
-.sek--smal { padding-block: clamp(64px, 8vw, 120px); }
+.sek--smal { padding-block: clamp(52px, 5.8vw, 92px); }
 .sek--flad { padding-top: 0; }
 /* Til to sektioner, der hører sammen: mindre luft i sømmen mellem dem. */
 .sek--taet-bund { padding-bottom: clamp(40px, 4.4vw, 64px); }
