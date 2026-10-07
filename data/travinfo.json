@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-10-06T19:02:04.669Z",
+ "opdateret": "2026-10-07T15:47:33.223Z",
  "traener": {
   "foedt": 2001,
   "hjemmebane": "Skive Trav",
@@ -9,7 +9,7 @@
  "traenerStatistik": [
   {
    "aar": 2026,
-   "starter": 83,
+   "starter": 84,
    "sejre": 16,
    "toer": 10,
    "treer": 10,
@@ -109,7 +109,7 @@
    "foedt": "2022-06-05",
    "far": "Power (SE)",
    "mor": "Confetti Ås (SE)",
-   "starter": 26,
+   "starter": 27,
    "placeringer": "2-4-4",
    "praemier": 581794,
    "rekord": "14,8k 14,3ak 12,1am"
@@ -415,6 +415,18 @@
   }
  ],
  "resultater": [
+  {
+   "id": "837659-658484",
+   "dato": "2026-10-07",
+   "bane": "Sk",
+   "loeb": 2,
+   "hestId": 658484,
+   "hest": "Cala Karamell (SE)",
+   "placering": "0",
+   "tid": "19,4ag",
+   "distance": 2060,
+   "praemie": 0
+  },
   {
    "id": "837610-659474",
    "dato": "2026-10-03",
@@ -1881,14 +1893,6 @@
   }
  ],
  "kommende": [
-  {
-   "dato": "2026-10-07",
-   "bane": "Sk",
-   "loeb": 2,
-   "hestId": 658484,
-   "hest": "Cala Karamell (SE)",
-   "kusk": "Casper M. Nielsen"
-  },
   {
    "dato": "2026-10-11",
    "bane": "Ch",
