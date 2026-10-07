@@ -606,7 +606,7 @@ ${ejerbaand()}
       </ul>
       <div class="fb" data-fb="${SITE.facebook}">
         <button class="knap knap--kant" type="button">Vis de seneste opslag ${pil}</button>
-        <p class="fb__note">Opslagene hentes fra Facebook, når du trykker.</p>
+        <p class="fb__note">Opslagene hentes fra Facebook og sætter cookies derfra.</p>
       </div>
     </div>
   </div>
