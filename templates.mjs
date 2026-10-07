@@ -604,6 +604,10 @@ ${ejerbaand()}
         <li><a href="${SITE.facebook}" target="_blank" rel="noopener"><span>Facebook</span><b>${SITE.navn}</b>${ud}${nyFane}</a></li>
         <li><a href="${SITE.instagram}" target="_blank" rel="noopener"><span>Instagram</span><b>@stald_magnusmnielsen</b>${ud}${nyFane}</a></li>
       </ul>
+      <div class="fb" data-fb="${SITE.facebook}">
+        <button class="knap knap--kant" type="button">Vis de seneste opslag ${pil}</button>
+        <p class="fb__note">Opslagene hentes fra Facebook, når du trykker.</p>
+      </div>
     </div>
   </div>
 </section>
