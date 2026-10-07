@@ -65,6 +65,9 @@ const BILLEDER = {
   'flise-2': [1, 320, 600],
   'flise-3': [1, 320, 600],
   'side-resultater-bred': [1.5, 1200, 1800, 2400],
+  'side-stalden-bred': [1.5, 1200, 1800, 2400],
+  'side-heste-bred': [1.5, 1200, 1800, 2400],
+  'side-kontakt-bred': [1.5, 1200, 1800, 2400],
 };
 
 const BANER = { Sk: 'Skive', 'Ål': 'Aalborg', 'År': 'Aarhus', Od: 'Odense', Ch: 'Charlottenlund', Bi: 'Billund', Bh: 'Bornholm', Ny: 'Nykøbing F.', Bs: 'Skovbo', Kl: 'Klampenborg' };
@@ -311,9 +314,10 @@ ${bund(o)}
 
 // Sidehoved. Normalt vises hele det høje billede (`billede`) til højre uden noget ovenpå, med teksten ved siden af.
 // Har siden også et bredt billede (`bred`), fylder det hele feltet på liggende skærme med teksten ovenpå.
-// På smalle og stående skærme ligger det høje billede altid bag teksten.
-const sidehoved = ({ oje, h1, tekst, billede, bred, alt, pos = '50% 30%', posBred = '50% 30%' }) => `
-<section class="sidehoved${bred ? ' sidehoved--fuld' : ''}">
+// På smalle og stående skærme ligger det høje billede altid bag teksten. `hoejre` stiller teksten i højre side,
+// når motivet i det brede billede er til venstre.
+const sidehoved = ({ oje, h1, tekst, billede, bred, alt, pos = '50% 30%', posBred = '50% 30%', hoejre = false }) => `
+<section class="sidehoved${bred ? ' sidehoved--fuld' : ''}${hoejre ? ' sidehoved--hoejre' : ''}">
   <picture class="sidehoved__billede" style="--pos:${pos};--pos-bred:${posBred}">${bred ? `
     <source media="(max-aspect-ratio: 1/1)" srcset="${BILLEDER[billede].slice(1).map((w) => `${R}assets/img/${billede}-${w}.webp ${w}w`).join(', ')}" sizes="100vw">` : ''}
     ${img(bred ?? billede, alt, { sizes: bred ? '100vw' : '(min-width: 961px) 50vw, 100vw', lazy: false })}
@@ -704,8 +708,11 @@ ${sidehoved({
   h1: 'Stalden <em>i Skive</em>',
   tekst: `På Flyvej i Skive – samme vej som hjemmebanen Skive Trav – har ${SITE.navn} ${o.heste.length} heste i træning.`,
   billede: 'stald-gang',
+  bred: 'side-stalden-bred',
+  hoejre: true,
   alt: 'Mørk travhest med blåt dækken i staldgangen',
   pos: '12% 25%',
+  posBred: '50% 30%',
 })}
 
 <section class="sek">
@@ -797,8 +804,11 @@ ${sidehoved({
   h1: 'Heste <em>i træning</em>',
   tekst: `${o.heste.length} heste står lige nu på træningslisten hos Magnus M. Nielsen. Listen kommer direkte fra Dansk Hestevæddeløb og følger automatisk med, når heste kommer til eller rejser videre.`,
   billede: 'side-heste',
+  bred: 'side-heste-bred',
+  hoejre: true,
   alt: 'Brun travhest ser lige ind i kameraet i staldgangen',
   pos: '50% 18%',
+  posBred: '50% 35%',
 })}
 ${o.fotoheste.length ? `
 <section class="sek sek--tone">
@@ -898,8 +908,10 @@ ${sidehoved({
   h1: 'Kontakt <em>Magnus</em>',
   tekst: 'Har du en hest, der skal i træning, eller et spørgsmål til stalden? Ring, send en sms eller skriv en mail.',
   billede: 'side-kontakt',
+  bred: 'side-kontakt-bred',
   alt: 'Travhest ved foldene under en grå himmel',
   pos: '50% 20%',
+  posBred: '50% 40%',
 })}
 
 <section class="sek">
