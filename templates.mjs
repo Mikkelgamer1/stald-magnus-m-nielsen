@@ -27,6 +27,7 @@ const HESTEFOTO = {
   646886: 'hest-hernando',
   657848: 'hest-giovanni',
   657408: 'hest-manta-ray-cash',
+  659474: 'hest-giulia-di-masi',
 };
 
 // navn: [forhold bredde/højde, ...bredder]
@@ -48,6 +49,7 @@ const BILLEDER = {
   'hest-hernando': [0.8, 560, 900],
   'hest-giovanni': [0.8, 560, 900],
   'hest-manta-ray-cash': [0.8, 560, 900],
+  'hest-giulia-di-masi': [0.8, 560, 900],
   'magnus-sulky': [0.75, 640, 1000],
   'side-heste': [0.75, 600, 900, 1400],
   'side-resultater': [0.75, 600, 900, 1400],
@@ -803,7 +805,7 @@ ${o.fotoheste.length ? `
         <h2 data-vis style="--i:1">Ansigter <em>fra stalden.</em></h2>
       </div>
     </div>
-    <div class="kortraekke kortraekke--tre">${o.fotoheste.map((h) => hestekort(h, `https://travinfo.dk/horse_tabs/${h.id}`, true)).join('')}
+    <div class="kortraekke kortraekke--tre">${o.fotoheste.slice(0, o.fotoheste.length > 3 ? o.fotoheste.length - (o.fotoheste.length % 3) : 3).map((h) => hestekort(h, `https://travinfo.dk/horse_tabs/${h.id}`, true)).join('')}
     </div>
   </div>
 </section>` : ''}
