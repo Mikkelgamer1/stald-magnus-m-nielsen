@@ -831,7 +831,7 @@ ${sidehoved({
   posBred: '50% 12%',
 })}
 
-<section class="sek sek--tone sek--smal">
+<section class="sek sek--tone sek--smal sek--taet-bund">
   <div class="wrap">
     <h2 class="oje" data-vis>Stalden i ${o.saeson.aar}</h2>
     <dl class="noegletal" data-vis style="--i:1">
@@ -849,7 +849,7 @@ ${sidehoved({
   </div>
 </section>
 
-<section class="sek">
+<section class="sek sek--taet-top">
   <div class="wrap resgitter">
     <div>
       <div class="sekhoved sekhoved--lille">
