@@ -1,6 +1,6 @@
 # Stald Magnus M. Nielsen – hjemmeside
 
-Statisk site (HTML, CSS, lidt JavaScript). Ingen afhængigheder, ingen database, ingen cookies. Kræver kun Node 20+ for at bygge.
+Statisk site (HTML, CSS, lidt JavaScript). Ingen afhængigheder, ingen database og ingen egne cookies – Facebook-opslagene på forsiden hentes først efter samtykke. Kræver kun Node 20+ for at bygge.
 
 ```bash
 node build.mjs --serve
@@ -23,7 +23,7 @@ Heste, resultater, kommende starter og statistik kommer fra Dansk Hestevæddelø
 - **Resultater, statistik, søjlediagrammer, formkurve og Danmarkskortet** tegnes ud fra de samme data ved hver kørsel. Fejler hentningen, bygges der videre med de gemte data, og datoen for seneste opdatering står på siden.
 - Magnus skal ikke gøre noget.
 
-`.github/workflows/opdater.yml` kører `--hent` hver morgen og udgiver på GitHub Pages. Workflowet er ikke afprøvet endnu – det kræver, at projektet ligger i et GitHub-repo med Pages slået til (Source: GitHub Actions).
+`.github/workflows/opdater.yml` kører `--hent` hver morgen og ved hvert push til `main` og udgiver på GitHub Pages. Sitet ligger foreløbig på https://mikkelgamer1.github.io/stald-magnus-m-nielsen/, hvor `robots.txt` holder det ude af søgemaskinerne. Når domænet er på plads, sættes repo-variablen `SITE_URL` til den rigtige adresse – så åbnes der for søgemaskinerne af sig selv.
 
 Andre muligheder: Netlify eller Cloudflare Pages (build-kommando `node build.mjs --hent`, mappe `dist`, plus et dagligt build-hook), eller upload `dist/` til et almindeligt webhotel. På et webhotel uden automatik står tallene stille, indtil der bygges og uploades igen.
 
