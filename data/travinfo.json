@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-10-08T11:19:20.315Z",
+ "opdateret": "2026-10-09T11:17:38.728Z",
  "traener": {
   "foedt": 2001,
   "hjemmebane": "Skive Trav",
@@ -1899,6 +1899,22 @@
    "loeb": 9,
    "hestId": 651228,
    "hest": "Karat C N",
+   "kusk": "Casper M. Nielsen"
+  },
+  {
+   "dato": "2026-10-14",
+   "bane": "Sk",
+   "loeb": 6,
+   "hestId": 657122,
+   "hest": "Maserati Flamingo",
+   "kusk": "Birger Jørgensen"
+  },
+  {
+   "dato": "2026-10-15",
+   "bane": "År",
+   "loeb": 5,
+   "hestId": 657408,
+   "hest": "Manta Ray Cash",
    "kusk": "Casper M. Nielsen"
   }
  ]
