@@ -1,8 +1,8 @@
 // Al HTML til sitet. Tekster rettes her; tal, heste og resultater kommer fra data/travinfo.json.
 
 export const SITE = {
-  // ← Bekræft domænet før lancering (kan også sættes med miljøvariablen SITE_URL).
-  url: (process.env.SITE_URL || 'https://www.staldmagnusmnielsen.dk').replace(/\/$/, ''),
+  // ← Bekræft domænet før lancering (kan også sættes med miljøvariablen SITE_URL). På Vercel bruges projektets adresse.
+  url: (process.env.SITE_URL || (process.env.VERCEL_PROJECT_PRODUCTION_URL && 'https://' + process.env.VERCEL_PROJECT_PRODUCTION_URL) || 'https://www.staldmagnusmnielsen.dk').replace(/\/$/, ''),
   navn: 'Stald Magnus M. Nielsen',
   licens: 517710,
   telefon: '+45 51 89 80 33',

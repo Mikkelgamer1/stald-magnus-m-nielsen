@@ -128,8 +128,8 @@ async function byg() {
 ${offentlige.map((s) => `  <url><loc>${SITE.url}/${s.url}</loc><lastmod>${data.opdateret.slice(0, 10)}</lastmod></url>`).join('\n')}
 </urlset>
 `);
-  // På en midlertidig github.io-adresse holdes sitet ude af søgemaskinerne; med eget domæne åbnes der.
-  const midlertidig = new URL(SITE.url).hostname.endsWith('.github.io');
+  // På en midlertidig github.io- eller vercel.app-adresse holdes sitet ude af søgemaskinerne; med eget domæne åbnes der.
+  const midlertidig = /\.(github\.io|vercel\.app)$/.test(new URL(SITE.url).hostname);
   await writeFile(path.join(DIST, 'robots.txt'), midlertidig ? 'User-agent: *\nDisallow: /\n' : `User-agent: *\nAllow: /\n\nSitemap: ${SITE.url}/sitemap.xml\n`);
   console.log(`Bygget ${alle.length} sider → dist/  (data fra ${data.opdateret.slice(0, 10)}: ${data.heste.length} heste, ${data.resultater.length} resultater)`);
 }
