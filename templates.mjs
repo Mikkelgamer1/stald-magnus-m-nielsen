@@ -331,19 +331,6 @@ const sidehoved = ({ oje, h1, tekst, billede, bred, alt, pos = '50% 30%', posBre
   </div>
 </section>`;
 
-/** Søjlediagram over sejre pr. sæson (ældste til venstre). */
-const soejler = (titel, raekker) => {
-  const aar = raekker.filter((s) => s.starter > 0).reverse();
-  const max = Math.max(1, ...aar.map((s) => s.sejre));
-  return `
-      <figure class="soejler">
-        <figcaption>${titel}</figcaption>
-        <ol>${aar.map((s, i) => `
-          <li${s.sejre === max ? ' class="hoejest"' : ''} style="--h:${Math.round((s.sejre / max) * 100)}%;--n:${i}"><b>${s.sejre}</b><span class="sr"> sejre i </span><span class="soejler__aar">${s.aar}</span></li>`).join('')}
-        </ol>
-      </figure>`;
-};
-
 /**
  * Skematisk Danmarkskort. `punkter` er [{ kode, navn, antal? }]: med antal tegnes en boble med tallet i,
  * uden antal en lille prik. Skive (hjemmebanen) får en ring, og der tegnes linjer derfra til de andre baner.
@@ -688,10 +675,6 @@ ${sidehoved({
         <h2 data-vis style="--i:1">Sæson <em>for sæson.</em></h2>
       </div>
       <p data-vis style="--i:2">Officielle tal fra Dansk Hestevæddeløb, opdateret ${o.opdateret}.<br>${ekstern(SITE.travinfo, 'Se alle tal på Travinfo')}</p>
-    </div>
-    <div class="tabeller tabeller--diagram" data-vis>
-      ${soejler('Sejre som træner', data.traenerStatistik)}
-      ${soejler('Sejre som kusk', data.kuskStatistik)}
     </div>
     <div class="tabeller" data-vis>
       ${statTabel('Som træner', data.traenerStatistik)}
