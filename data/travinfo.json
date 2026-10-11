@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-10-11T10:47:22.150Z",
+ "opdateret": "2026-10-11T19:39:27.556Z",
  "traener": {
   "foedt": 2001,
   "hjemmebane": "Skive Trav",
@@ -9,7 +9,7 @@
  "traenerStatistik": [
   {
    "aar": 2026,
-   "starter": 84,
+   "starter": 85,
    "sejre": 16,
    "toer": 10,
    "treer": 10,
@@ -213,7 +213,7 @@
    "foedt": "2021-04-12",
    "far": "Express Bourbon (FR)",
    "mor": "Another C N",
-   "starter": 31,
+   "starter": 32,
    "placeringer": "8-3-3",
    "praemier": 953834,
    "rekord": "18,7k 14,3m 16,6ak *12,2am *12,6al"
@@ -415,6 +415,18 @@
   }
  ],
  "resultater": [
+  {
+   "id": "837750-651228",
+   "dato": "2026-10-11",
+   "bane": "Ch",
+   "loeb": 9,
+   "hestId": 651228,
+   "hest": "Karat C N",
+   "placering": "d",
+   "tid": "ga",
+   "distance": 2000,
+   "praemie": 0
+  },
   {
    "id": "837659-658484",
    "dato": "2026-10-07",
@@ -1893,14 +1905,6 @@
   }
  ],
  "kommende": [
-  {
-   "dato": "2026-10-11",
-   "bane": "Ch",
-   "loeb": 9,
-   "hestId": 651228,
-   "hest": "Karat C N",
-   "kusk": "Casper M. Nielsen"
-  },
   {
    "dato": "2026-10-14",
    "bane": "Sk",
