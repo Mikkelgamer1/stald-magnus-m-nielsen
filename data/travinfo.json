@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-10-12T11:54:04.499Z",
+ "opdateret": "2026-10-13T11:43:24.973Z",
  "traener": {
   "foedt": 2001,
   "hjemmebane": "Skive Trav",
@@ -243,6 +243,19 @@
    "placeringer": "1-1-1",
    "praemier": 62980,
    "rekord": "*16,7m 14,7am"
+  },
+  {
+   "id": 655755,
+   "navn": "Make A Wish",
+   "alder": 3,
+   "koen": "Vallak",
+   "foedt": "2023-03-22",
+   "far": "Wishing Stone (US)",
+   "mor": "Gabbi",
+   "starter": 0,
+   "placeringer": "0-0-0",
+   "praemier": 0,
+   "rekord": ""
   },
   {
    "id": 656534,
@@ -1920,6 +1933,30 @@
    "hestId": 657408,
    "hest": "Manta Ray Cash",
    "kusk": "Casper M. Nielsen"
+  },
+  {
+   "dato": "2026-10-16",
+   "bane": "Ål",
+   "loeb": 3,
+   "hestId": 656446,
+   "hest": "Let's Run Kåsgård",
+   "kusk": "Casper M. Nielsen"
+  },
+  {
+   "dato": "2026-10-16",
+   "bane": "Ål",
+   "loeb": 5,
+   "hestId": 652343,
+   "hest": "Kaiser Faust",
+   "kusk": "Casper M. Nielsen"
+  },
+  {
+   "dato": "2026-10-16",
+   "bane": "Ål",
+   "loeb": 6,
+   "hestId": 646886,
+   "hest": "Hernando",
+   "kusk": "Birger Jørgensen"
   }
  ]
 }
