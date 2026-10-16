@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-10-15T09:07:07.264Z",
+ "opdateret": "2026-10-16T08:59:39.344Z",
  "traener": {
   "foedt": 2001,
   "hjemmebane": "Skive Trav",
@@ -9,12 +9,12 @@
  "traenerStatistik": [
   {
    "aar": 2026,
-   "starter": 85,
+   "starter": 86,
    "sejre": 16,
    "toer": 10,
    "treer": 10,
    "procent": 19,
-   "praemier": 371500
+   "praemier": 373500
   },
   {
    "aar": 2025,
@@ -278,10 +278,10 @@
    "foedt": "2023-05-19",
    "far": "Italiano Vero (FR)",
    "mor": "Yummi Yummi (SE)",
-   "starter": 5,
+   "starter": 6,
    "placeringer": "0-0-0",
-   "praemier": 4000,
-   "rekord": "19,5m 21,7am"
+   "praemier": 6000,
+   "rekord": "20,9k 19,5m 21,7am"
   },
   {
    "id": 657122,
@@ -428,6 +428,18 @@
   }
  ],
  "resultater": [
+  {
+   "id": "837783-657408",
+   "dato": "2026-10-15",
+   "bane": "År",
+   "loeb": 5,
+   "hestId": 657408,
+   "hest": "Manta Ray Cash",
+   "placering": "5",
+   "tid": "20,9",
+   "distance": 1800,
+   "praemie": 2000
+  },
   {
    "id": "837750-651228",
    "dato": "2026-10-11",
@@ -1918,14 +1930,6 @@
   }
  ],
  "kommende": [
-  {
-   "dato": "2026-10-15",
-   "bane": "År",
-   "loeb": 5,
-   "hestId": 657408,
-   "hest": "Manta Ray Cash",
-   "kusk": "Casper M. Nielsen"
-  },
   {
    "dato": "2026-10-16",
    "bane": "Ål",
