@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-10-16T08:59:39.344Z",
+ "opdateret": "2026-10-17T08:31:24.790Z",
  "traener": {
   "foedt": 2001,
   "hjemmebane": "Skive Trav",
@@ -9,12 +9,12 @@
  "traenerStatistik": [
   {
    "aar": 2026,
-   "starter": 86,
+   "starter": 89,
    "sejre": 16,
    "toer": 10,
-   "treer": 10,
-   "procent": 19,
-   "praemier": 373500
+   "treer": 11,
+   "procent": 18,
+   "praemier": 379000
   },
   {
    "aar": 2025,
@@ -161,9 +161,9 @@
    "foedt": "2019-04-17",
    "far": "S J's Photo (US)",
    "mor": "Mateka K (SE)",
-   "starter": 53,
+   "starter": 54,
    "placeringer": "10-5-3",
-   "praemier": 197841,
+   "praemier": 199841,
    "rekord": "14,7m 12,7ak 13,5am 15,2al"
   },
   {
@@ -200,9 +200,9 @@
    "foedt": "2021-04-16",
    "far": "Great Challenger (US)",
    "mor": "Rigoletto",
-   "starter": 31,
-   "placeringer": "9-4-0",
-   "praemier": 113500,
+   "starter": 32,
+   "placeringer": "9-4-1",
+   "praemier": 117000,
    "rekord": "15,0m *15,8ak *14,3am *18,0al"
   },
   {
@@ -226,7 +226,7 @@
    "foedt": "2022-05-06",
    "far": "Ens Snapshot (US)",
    "mor": "Rositta Kåsgård",
-   "starter": 21,
+   "starter": 22,
    "placeringer": "2-1-3",
    "praemier": 48400,
    "rekord": "*20,1k 18,7m 15,5ak 14,6am"
@@ -428,6 +428,42 @@
   }
  ],
  "resultater": [
+  {
+   "id": "837874-646886",
+   "dato": "2026-10-16",
+   "bane": "Ål",
+   "loeb": 6,
+   "hestId": 646886,
+   "hest": "Hernando",
+   "placering": "5",
+   "tid": "15,5a",
+   "distance": 2140,
+   "praemie": 2000
+  },
+  {
+   "id": "837862-652343",
+   "dato": "2026-10-16",
+   "bane": "Ål",
+   "loeb": 5,
+   "hestId": 652343,
+   "hest": "Kaiser Faust",
+   "placering": "3",
+   "tid": "15,0a",
+   "distance": 2140,
+   "praemie": 3500
+  },
+  {
+   "id": "837859-656446",
+   "dato": "2026-10-16",
+   "bane": "Ål",
+   "loeb": 3,
+   "hestId": 656446,
+   "hest": "Let's Run Kåsgård",
+   "placering": "0",
+   "tid": "17,9a",
+   "distance": 2140,
+   "praemie": 0
+  },
   {
    "id": "837783-657408",
    "dato": "2026-10-15",
@@ -1929,30 +1965,5 @@
    "praemie": 450
   }
  ],
- "kommende": [
-  {
-   "dato": "2026-10-16",
-   "bane": "Ål",
-   "loeb": 3,
-   "hestId": 656446,
-   "hest": "Let's Run Kåsgård",
-   "kusk": "Casper M. Nielsen"
-  },
-  {
-   "dato": "2026-10-16",
-   "bane": "Ål",
-   "loeb": 5,
-   "hestId": 652343,
-   "hest": "Kaiser Faust",
-   "kusk": "Casper M. Nielsen"
-  },
-  {
-   "dato": "2026-10-16",
-   "bane": "Ål",
-   "loeb": 6,
-   "hestId": 646886,
-   "hest": "Hernando",
-   "kusk": "Birger Jørgensen"
-  }
- ]
+ "kommende": []
 }
