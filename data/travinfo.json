@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-10-20T09:23:26.840Z",
+ "opdateret": "2026-10-21T09:19:52.676Z",
  "traener": {
   "foedt": 2001,
   "hjemmebane": "Skive Trav",
@@ -101,19 +101,6 @@
   }
  ],
  "heste": [
-  {
-   "id": 658484,
-   "navn": "Cala Karamell (SE)",
-   "alder": 4,
-   "koen": "Hoppe",
-   "foedt": "2022-06-05",
-   "far": "Power (SE)",
-   "mor": "Confetti Ås (SE)",
-   "starter": 27,
-   "placeringer": "2-4-4",
-   "praemier": 581794,
-   "rekord": "14,8k 14,3ak 12,1am"
-  },
   {
    "id": 657848,
    "navn": "Giovanni (SE)",
@@ -230,19 +217,6 @@
    "placeringer": "2-1-3",
    "praemier": 48400,
    "rekord": "*20,1k 18,7m 15,5ak 14,6am"
-  },
-  {
-   "id": 654686,
-   "navn": "Lucky and Lucky",
-   "alder": 4,
-   "koen": "Vallak",
-   "foedt": "2022-05-26",
-   "far": "Ready Cash (FR)",
-   "mor": "Raspberry Diamant (DE)",
-   "starter": 13,
-   "placeringer": "1-1-1",
-   "praemier": 62980,
-   "rekord": "*16,7m 14,7am"
   },
   {
    "id": 655755,
