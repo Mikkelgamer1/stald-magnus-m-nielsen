@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-10-26T10:03:06.915Z",
+ "opdateret": "2026-10-27T09:46:39.507Z",
  "traener": {
   "foedt": 2001,
   "hjemmebane": "Skive Trav",
@@ -217,19 +217,6 @@
    "placeringer": "2-1-3",
    "praemier": 48400,
    "rekord": "*20,1k 18,7m 15,5ak 14,6am"
-  },
-  {
-   "id": 655755,
-   "navn": "Make A Wish",
-   "alder": 3,
-   "koen": "Vallak",
-   "foedt": "2023-03-22",
-   "far": "Wishing Stone (US)",
-   "mor": "Gabbi",
-   "starter": 0,
-   "placeringer": "0-0-0",
-   "praemier": 0,
-   "rekord": ""
   },
   {
    "id": 656534,
@@ -1339,18 +1326,6 @@
    "praemie": 0
   },
   {
-   "id": "833824-652343",
-   "dato": "2026-03-27",
-   "bane": "Od",
-   "loeb": 2,
-   "hestId": 652343,
-   "hest": "Kaiser Faust",
-   "placering": "5",
-   "tid": "20,2ag",
-   "distance": 2140,
-   "praemie": 2000
-  },
-  {
    "id": "833824-654702",
    "dato": "2026-03-27",
    "bane": "Od",
@@ -1361,6 +1336,18 @@
    "tid": "17,9a",
    "distance": 2140,
    "praemie": 2500
+  },
+  {
+   "id": "833824-652343",
+   "dato": "2026-03-27",
+   "bane": "Od",
+   "loeb": 2,
+   "hestId": 652343,
+   "hest": "Kaiser Faust",
+   "placering": "5",
+   "tid": "20,2ag",
+   "distance": 2140,
+   "praemie": 2000
   },
   {
    "id": "833696-648160",
@@ -1939,5 +1926,14 @@
    "praemie": 450
   }
  ],
- "kommende": []
+ "kommende": [
+  {
+   "dato": "2026-10-30",
+   "bane": "Sk",
+   "loeb": 3,
+   "hestId": 648160,
+   "hest": "Hit Me",
+   "kusk": "Mads Hviid"
+  }
+ ]
 }
