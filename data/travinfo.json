@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-10-27T09:46:39.507Z",
+ "opdateret": "2026-10-28T10:32:20.958Z",
  "traener": {
   "foedt": 2001,
   "hjemmebane": "Skive Trav",
@@ -1934,6 +1934,14 @@
    "hestId": 648160,
    "hest": "Hit Me",
    "kusk": "Mads Hviid"
+  },
+  {
+   "dato": "2026-11-02",
+   "bane": "Ål",
+   "loeb": 2,
+   "hestId": 652343,
+   "hest": "Kaiser Faust",
+   "kusk": "Casper M. Nielsen"
   }
  ]
 }
