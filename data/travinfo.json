@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-10-30T10:50:11.342Z",
+ "opdateret": "2026-10-31T10:21:17.776Z",
  "traener": {
   "foedt": 2001,
   "hjemmebane": "Skive Trav",
@@ -9,12 +9,12 @@
  "traenerStatistik": [
   {
    "aar": 2026,
-   "starter": 89,
+   "starter": 90,
    "sejre": 16,
    "toer": 10,
    "treer": 11,
    "procent": 18,
-   "praemier": 379000
+   "praemier": 381000
   },
   {
    "aar": 2025,
@@ -161,9 +161,9 @@
    "foedt": "2019-07-20",
    "far": "Michael's Turn (US)",
    "mor": "Karin (SE)",
-   "starter": 61,
+   "starter": 62,
    "placeringer": "6-8-12",
-   "praemier": 250500,
+   "praemier": 252500,
    "rekord": "23,2k *14,7m 16,3l 12,7ak 12,6am"
   },
   {
@@ -389,6 +389,18 @@
   }
  ],
  "resultater": [
+  {
+   "id": "838062-648160",
+   "dato": "2026-10-30",
+   "bane": "Sk",
+   "loeb": 3,
+   "hestId": 648160,
+   "hest": "Hit Me",
+   "placering": "5",
+   "tid": "15,5a",
+   "distance": 2060,
+   "praemie": 2000
+  },
   {
    "id": "837874-646886",
    "dato": "2026-10-16",
@@ -1927,14 +1939,6 @@
   }
  ],
  "kommende": [
-  {
-   "dato": "2026-10-30",
-   "bane": "Sk",
-   "loeb": 3,
-   "hestId": 648160,
-   "hest": "Hit Me",
-   "kusk": "Mads Hviid"
-  },
   {
    "dato": "2026-11-02",
    "bane": "Ål",
