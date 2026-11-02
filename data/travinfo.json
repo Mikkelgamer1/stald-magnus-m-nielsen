@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-01T11:14:02.692Z",
+ "opdateret": "2026-11-02T12:18:10.066Z",
  "traener": {
   "foedt": 2001,
   "hjemmebane": "Skive Trav",
@@ -323,32 +323,6 @@
    "rekord": ""
   },
   {
-   "id": 660711,
-   "navn": "Obey Dust",
-   "alder": 1,
-   "koen": "Hingst",
-   "foedt": "2025-05-07",
-   "far": "Francesco Zet (SE)",
-   "mor": "Electric Rain (SE)",
-   "starter": 0,
-   "placeringer": "0-0-0",
-   "praemier": 0,
-   "rekord": ""
-  },
-  {
-   "id": 660558,
-   "navn": "Oh My God Shadow",
-   "alder": 1,
-   "koen": "Hoppe",
-   "foedt": "2025-06-29",
-   "far": "Maharajah (SE)",
-   "mor": "Elektra Dilli",
-   "starter": 0,
-   "placeringer": "0-0-0",
-   "praemier": 0,
-   "rekord": ""
-  },
-  {
    "id": 660953,
    "navn": "Oneandonly Music (SE)",
    "alder": 1,
@@ -369,19 +343,6 @@
    "foedt": "2025-06-04",
    "far": "Googoo Gaagaa (US)",
    "mor": "Wannabe",
-   "starter": 0,
-   "placeringer": "0-0-0",
-   "praemier": 0,
-   "rekord": ""
-  },
-  {
-   "id": 660027,
-   "navn": "Orivola",
-   "alder": 1,
-   "koen": "Hoppe",
-   "foedt": "2025-04-19",
-   "far": "Maharajah (SE)",
-   "mor": "Radiant One (US)",
    "starter": 0,
    "placeringer": "0-0-0",
    "praemier": 0,
