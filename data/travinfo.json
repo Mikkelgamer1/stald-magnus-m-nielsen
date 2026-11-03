@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-02T12:18:10.066Z",
+ "opdateret": "2026-11-03T11:52:52.178Z",
  "traener": {
   "foedt": 2001,
   "hjemmebane": "Skive Trav",
@@ -9,12 +9,12 @@
  "traenerStatistik": [
   {
    "aar": 2026,
-   "starter": 90,
-   "sejre": 16,
+   "starter": 91,
+   "sejre": 17,
    "toer": 10,
    "treer": 11,
-   "procent": 18,
-   "praemier": 381000
+   "procent": 19,
+   "praemier": 391000
   },
   {
    "aar": 2025,
@@ -187,10 +187,10 @@
    "foedt": "2021-04-16",
    "far": "Great Challenger (US)",
    "mor": "Rigoletto",
-   "starter": 32,
-   "placeringer": "9-4-1",
-   "praemier": 117000,
-   "rekord": "15,0m *15,8ak *14,3am *18,0al"
+   "starter": 33,
+   "placeringer": "10-4-1",
+   "praemier": 127000,
+   "rekord": "15,0m *15,8ak *14,3am *15,4al"
   },
   {
    "id": 651228,
@@ -350,6 +350,18 @@
   }
  ],
  "resultater": [
+  {
+   "id": "838079-652343",
+   "dato": "2026-11-02",
+   "bane": "Ål",
+   "loeb": 2,
+   "hestId": 652343,
+   "hest": "Kaiser Faust",
+   "placering": "1",
+   "tid": "15,4a",
+   "distance": 2640,
+   "praemie": 10000
+  },
   {
    "id": "838062-648160",
    "dato": "2026-10-30",
@@ -1901,12 +1913,20 @@
  ],
  "kommende": [
   {
-   "dato": "2026-11-02",
-   "bane": "Ål",
-   "loeb": 2,
-   "hestId": 652343,
-   "hest": "Kaiser Faust",
+   "dato": "2026-11-06",
+   "bane": "Od",
+   "loeb": 6,
+   "hestId": 646886,
+   "hest": "Hernando",
    "kusk": "Casper M. Nielsen"
+  },
+  {
+   "dato": "2026-11-08",
+   "bane": "Ch",
+   "loeb": 9,
+   "hestId": 651228,
+   "hest": "Karat C N",
+   "kusk": "Robin Bakker"
   }
  ]
 }
