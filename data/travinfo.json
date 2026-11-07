@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-06T12:02:19.876Z",
+ "opdateret": "2026-11-07T11:00:33.473Z",
  "traener": {
   "foedt": 2001,
   "hjemmebane": "Skive Trav",
@@ -9,12 +9,12 @@
  "traenerStatistik": [
   {
    "aar": 2026,
-   "starter": 91,
+   "starter": 92,
    "sejre": 17,
    "toer": 10,
-   "treer": 11,
-   "procent": 19,
-   "praemier": 391000
+   "treer": 12,
+   "procent": 18,
+   "praemier": 394500
   },
   {
    "aar": 2025,
@@ -148,9 +148,9 @@
    "foedt": "2019-04-17",
    "far": "S J's Photo (US)",
    "mor": "Mateka K (SE)",
-   "starter": 54,
-   "placeringer": "10-5-3",
-   "praemier": 199841,
+   "starter": 55,
+   "placeringer": "10-5-4",
+   "praemier": 203341,
    "rekord": "14,7m 12,7ak 13,5am 15,2al"
   },
   {
@@ -350,6 +350,18 @@
   }
  ],
  "resultater": [
+  {
+   "id": "838175-646886",
+   "dato": "2026-11-06",
+   "bane": "Od",
+   "loeb": 6,
+   "hestId": 646886,
+   "hest": "Hernando",
+   "placering": "3",
+   "tid": "14,0a",
+   "distance": 2140,
+   "praemie": 3500
+  },
   {
    "id": "838079-652343",
    "dato": "2026-11-02",
@@ -1912,14 +1924,6 @@
   }
  ],
  "kommende": [
-  {
-   "dato": "2026-11-06",
-   "bane": "Od",
-   "loeb": 6,
-   "hestId": 646886,
-   "hest": "Hernando",
-   "kusk": "Casper M. Nielsen"
-  },
   {
    "dato": "2026-11-08",
    "bane": "Ch",
