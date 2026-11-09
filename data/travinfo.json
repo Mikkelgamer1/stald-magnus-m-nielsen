@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-08T11:14:27.294Z",
+ "opdateret": "2026-11-09T12:46:29.011Z",
  "traener": {
   "foedt": 2001,
   "hjemmebane": "Skive Trav",
@@ -9,7 +9,7 @@
  "traenerStatistik": [
   {
    "aar": 2026,
-   "starter": 92,
+   "starter": 93,
    "sejre": 17,
    "toer": 10,
    "treer": 12,
@@ -200,10 +200,10 @@
    "foedt": "2021-04-12",
    "far": "Express Bourbon (FR)",
    "mor": "Another C N",
-   "starter": 32,
+   "starter": 33,
    "placeringer": "8-3-3",
    "praemier": 953834,
-   "rekord": "18,7k 14,3m 16,6ak *12,2am *12,6al"
+   "rekord": "18,7k 14,3m 12,9ak *12,2am *12,6al"
   },
   {
    "id": 656446,
@@ -350,6 +350,18 @@
   }
  ],
  "resultater": [
+  {
+   "id": "838149-651228",
+   "dato": "2026-11-08",
+   "bane": "Ch",
+   "loeb": 9,
+   "hestId": 651228,
+   "hest": "Karat C N",
+   "placering": "0",
+   "tid": "12,9ag",
+   "distance": 1600,
+   "praemie": 0
+  },
   {
    "id": "838175-646886",
    "dato": "2026-11-06",
@@ -1923,14 +1935,5 @@
    "praemie": 450
   }
  ],
- "kommende": [
-  {
-   "dato": "2026-11-08",
-   "bane": "Ch",
-   "loeb": 9,
-   "hestId": 651228,
-   "hest": "Karat C N",
-   "kusk": "Robin Bakker"
-  }
- ]
+ "kommende": []
 }
