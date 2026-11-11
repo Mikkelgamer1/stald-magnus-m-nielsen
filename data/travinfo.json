@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-10T12:33:37.952Z",
+ "opdateret": "2026-11-11T11:50:26.616Z",
  "traener": {
   "foedt": 2001,
   "hjemmebane": "Skive Trav",
@@ -282,6 +282,19 @@
    "placeringer": "0-0-0",
    "praemier": 0,
    "rekord": ""
+  },
+  {
+   "id": 659102,
+   "navn": "Newsixstone",
+   "alder": 2,
+   "koen": "Hingst",
+   "foedt": "2024-05-08",
+   "far": "Six Pack (US)",
+   "mor": "Hello Stone (SE)",
+   "starter": 4,
+   "placeringer": "0-1-1",
+   "praemier": 19750,
+   "rekord": "20,1ak 17,5am"
   },
   {
    "id": 659427,
