@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-12T12:37:36.462Z",
+ "opdateret": "2026-11-13T12:08:07.228Z",
  "traener": {
   "foedt": 2001,
   "hjemmebane": "Skive Trav",
@@ -1948,5 +1948,14 @@
    "praemie": 450
   }
  ],
- "kommende": []
+ "kommende": [
+  {
+   "dato": "2026-11-18",
+   "bane": "Ål",
+   "loeb": 4,
+   "hestId": 656446,
+   "hest": "Let's Run Kåsgård",
+   "kusk": "Mads Hviid"
+  }
+ ]
 }
