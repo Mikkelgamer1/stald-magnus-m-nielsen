@@ -13,6 +13,7 @@
   --graa: #8c95a4;       /* kun streger og pynt */
   --linje: #dde2e9;
   --taage: #f2f4f7;
+  --lys-kant: #e8eef8;   /* fælles farve i kanten af de lyse afsnit, så de glider over i hinanden */
   --tekst: #111a2b;
 
   --linjefarve: var(--linje);
@@ -169,7 +170,18 @@ a:hover .ud { transform: translate(2px, -2px); }
 /* Til to sektioner, der hører sammen: mindre luft i sømmen mellem dem. */
 .sek--taet-bund { padding-bottom: clamp(40px, 4.4vw, 64px); }
 .sek--taet-top { padding-top: clamp(48px, 5.4vw, 88px); }
-.sek--tone { background: var(--taage); }
+/* Lyse afsnit: blødt skær i staldens blå. Hvert afsnit toner ud i --lys-kant foroven og forneden, så to lyse afsnit
+   mødes uden kant; de "grå" afsnit (sek--tone) er en tand dybere blågrå end de hvide. */
+.sek:not(.sek--mork):not(.sek--tone) { background:
+  linear-gradient(var(--lys-kant), rgba(232, 238, 248, 0) 20%, rgba(232, 238, 248, 0) 80%, var(--lys-kant)),
+  radial-gradient(1100px 640px at 90% 30%, rgba(36, 73, 166, .24), transparent 65%),
+  radial-gradient(900px 640px at 0% 72%, rgba(157, 180, 230, .5), transparent 65%),
+  #f2f6fc; }
+.sek--tone { background:
+  linear-gradient(var(--lys-kant), rgba(232, 238, 248, 0) 20%, rgba(232, 238, 248, 0) 80%, var(--lys-kant)),
+  radial-gradient(1000px 640px at 10% 30%, rgba(36, 73, 166, .3), transparent 65%),
+  radial-gradient(820px 560px at 100% 72%, rgba(157, 180, 230, .6), transparent 65%),
+  #e0e8f5; }
 .sek--mork { background: var(--ink); color: #fff; --linjefarve: rgba(255, 255, 255, .14); --daemp: rgba(255, 255, 255, .66); }
 .sek--mork .oje, .baand .oje, .slut .oje, .sidehoved .oje { color: var(--blaa-lys); }
 .sek--mork, .baand, .slut, .sidehoved, .hero { --stribe-1: var(--blaa-lys); --stribe-3: #fff; }
@@ -278,7 +290,7 @@ aside .valg { margin-top: 20px; }
 
 /* ---------- filmstribe og resultatbånd ---------- */
 
-.film { padding-block: clamp(14px, 2vw, 32px); overflow-x: auto; scrollbar-width: none; background: var(--taage); }
+.film { padding-block: clamp(14px, 2vw, 32px); overflow-x: auto; scrollbar-width: none; background: var(--lys-kant); }
 .film::-webkit-scrollbar { display: none; }
 .film__spor { display: flex; gap: clamp(10px, 1.4vw, 20px); width: max-content; padding-inline: var(--kant); }
 .film__spor li { flex: none; height: clamp(250px, 36vw, 520px); aspect-ratio: var(--r); overflow: hidden; }
@@ -338,7 +350,7 @@ aside .valg { margin-top: 20px; }
 .partner__logo--krafft { background: #011e45; } /* KRAFFTs egen blå */
 .partner__logo--krafft img { width: auto; max-width: none; height: clamp(74px, 8vw, 112px); transition: transform .6s var(--ease); }
 .partner__logo--tekst { background: var(--taage); font: 400 clamp(1.9rem, 3.2vw, 2.9rem)/1 var(--serif); letter-spacing: -.01em; transition: background .3s, color .3s; }
-.sek--tone .partner__logo--tekst { background: #fff; }
+.partner__logo--tekst { background: #fff; }
 .partner:hover .partner__logo--krafft img { transform: scale(1.05); }
 .partner:hover .partner__logo--tekst { background: var(--ink); color: #fff; }
 .partner__rolle { display: flex; align-items: center; gap: 10px; font: 600 .7rem/1.3 var(--sans); font-stretch: 90%; letter-spacing: .18em; text-transform: uppercase; color: var(--staal); }
