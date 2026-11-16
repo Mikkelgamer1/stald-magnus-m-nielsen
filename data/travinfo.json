@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-16T12:40:30.711Z",
+ "opdateret": "2026-11-16T20:34:13.639Z",
  "traener": {
   "foedt": 2001,
   "hjemmebane": "Skive Trav",
@@ -1956,6 +1956,14 @@
    "hestId": 656446,
    "hest": "Let's Run Kåsgård",
    "kusk": "Mads Hviid"
+  },
+  {
+   "dato": "2026-11-20",
+   "bane": "Od",
+   "loeb": 4,
+   "hestId": 652343,
+   "hest": "Kaiser Faust",
+   "kusk": "Casper M. Nielsen"
   }
  ]
 }
