@@ -7,6 +7,8 @@ export const SITE = {
   licens: 517710,
   telefon: '+45 51 89 80 33',
   email: 'teammagnus@outlook.dk',
+  firma: 'Travtræner Magnus M. Nielsen', // navn og CVR fra CVR-registret (datacvr.virk.dk, tjekket 16.11.2026) – skal stå på siden efter e-handelsloven § 7
+  cvr: '46096959',
   gade: 'Flyvej 16',
   postnr: '7800',
   by: 'Skive',
@@ -233,7 +235,7 @@ const bund = (o) => `
   <div class="wrap bund__linje">
     <p>Hjemmebane: ${ekstern(SITE.skiveTrav, 'Skive Trav', '')}</p>
     <p>Resultater og statistik: Dansk Hestevæddeløb · opdateret ${o.opdateret}</p>
-    <p>© ${new Date().getFullYear()} ${SITE.navn}</p>
+    <p>© ${new Date().getFullYear()} ${SITE.navn} · ${SITE.firma} · CVR ${SITE.cvr}</p>
   </div>
 </footer>`;
 
@@ -595,10 +597,6 @@ ${ejerbaand()}
         <li><a href="${SITE.facebook}" target="_blank" rel="noopener"><span>Facebook</span><b>${SITE.navn}</b>${ud}${nyFane}</a></li>
         <li><a href="${SITE.instagram}" target="_blank" rel="noopener"><span>Instagram</span><b>@stald_magnusmnielsen</b>${ud}${nyFane}</a></li>
       </ul>
-      <div class="fb" data-fb="${SITE.facebook}">
-        <button class="knap knap--kant" type="button">Vis de seneste opslag ${pil}</button>
-        <p class="fb__note">Opslagene hentes fra Facebook og sætter cookies derfra.</p>
-      </div>
     </div>
   </div>
 </section>

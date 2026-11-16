@@ -1,6 +1,6 @@
 # Stald Magnus M. Nielsen – hjemmeside
 
-Statisk site (HTML, CSS, lidt JavaScript). Ingen afhængigheder, ingen database og ingen egne cookies – Facebook-opslagene på forsiden hentes først efter samtykke. Kræver kun Node 20+ for at bygge.
+Statisk site (HTML, CSS, lidt JavaScript). Ingen afhængigheder, ingen database og ingen cookies – Facebook og Instagram vises som links, ikke som indlejring. Kræver kun Node 20+ for at bygge.
 
 ```bash
 node build.mjs --serve
@@ -53,5 +53,6 @@ Tjeklisten før lancering og listen over midlertidige billeder ligger i `LANCERI
 | Nominering til Årets Komet | danskhv.dk 10. januar 2025 |
 | "En af landets yngste trænere" | travet.dk 16. maj 2026 |
 | Karat C N som Kriteriumsvinder og debut for stalden | trav24.dk 1. september 2026, travservice.dk 20. september 2026 |
+| Firmanavn og CVR i bunden (Travtræner Magnus M. Nielsen, CVR 46096959) | CVR-registret, datacvr.virk.dk/enhed/virksomhed/46096959 (tjekket 16.11.2026) |
 | Skive Trav: 1948, flytning 1966, lysanlæg 2019–20 | skive-trav.dk/om-os |
 | Danmarks omrids på kortet (`data/danmark.json`) | Natural Earth 1:50m, public domain. Bornholm er udeladt, og banernes placering er omtrentlig |
