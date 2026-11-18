@@ -442,10 +442,13 @@ aside .valg { margin-top: 20px; }
 .adresser dd { font: 400 clamp(1.4rem, 2vw, 1.8rem)/1.25 var(--serif); }
 
 .gruppe + .gruppe { margin-top: clamp(56px, 7vw, 104px); }
-.gruppe__titel { display: flex; align-items: baseline; gap: 14px; padding-bottom: 20px; font-size: clamp(2.2rem, 3.8vw, 3.2rem); border-bottom: 1px solid var(--ink); }
+.gruppe__titel { display: flex; align-items: baseline; gap: 14px; padding-bottom: 6px; font-size: clamp(2.2rem, 3.8vw, 3.2rem); }
+.hesteliste { display: grid; gap: 12px; margin-top: 18px; }
 .gruppe__titel span { font: 600 .8rem/1 var(--sans); letter-spacing: .1em; color: var(--blaa); }
-.hest { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, .6fr) minmax(0, 2fr) 44px; grid-template-areas: "navn om tal link"; align-items: center; gap: 12px 24px; padding: 18px 0; border-bottom: 1px solid var(--linje); scroll-margin-top: 110px; }
-.hest:target { background: var(--taage); box-shadow: -16px 0 0 var(--taage), 16px 0 0 var(--taage); }
+.hest { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, .6fr) minmax(0, 2fr) 44px; grid-template-areas: "navn om tal link"; align-items: center; gap: 12px 24px; padding: 20px 28px 20px 25px; background: #fff; border-left: 3px solid var(--blaa); box-shadow: 0 14px 34px -20px rgba(36, 73, 166, .5); scroll-margin-top: 110px; }
+.js .hesteliste .hest { transition: opacity .9s var(--ease) calc(var(--i, 0) * 90ms), transform .9s var(--ease) calc(var(--i, 0) * 90ms), box-shadow .35s var(--ease), border-color .35s; }
+.hest:hover { border-left-color: var(--ink); box-shadow: 0 20px 44px -20px rgba(36, 73, 166, .6); }
+.hest:target { box-shadow: 0 0 0 2px var(--blaa), 0 14px 34px -20px rgba(36, 73, 166, .5); }
 .hest__navn { grid-area: navn; }
 .hest__navn h3 { font: 400 clamp(1.5rem, 2vw, 1.8rem)/1.05 var(--serif); letter-spacing: -.01em; }
 .hest__navn p { margin-top: 5px; font-size: .84rem; line-height: 1.4; }
@@ -612,7 +615,7 @@ p.hest__tal--tom { display: block; font-size: .9rem; }
   .tabel thead th { font-size: .58rem; letter-spacing: .08em; }
   .tabel caption { font-size: 1.7rem; }
 
-  .hest { grid-template-columns: minmax(0, 1fr) 44px; grid-template-areas: "navn link" "om link" "tal tal"; gap: 2px 14px; padding: 18px 0; }
+  .hest { grid-template-columns: minmax(0, 1fr) 44px; grid-template-areas: "navn link" "om link" "tal tal"; gap: 2px 14px; padding: 18px 18px 18px 15px; }
   .hest__navn { align-self: end; }
   .hest__om { align-self: start; }
   .hest__tal { padding-top: 10px; }
