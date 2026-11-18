@@ -444,9 +444,7 @@ aside .valg { margin-top: 20px; }
 .gruppe + .gruppe { margin-top: clamp(56px, 7vw, 104px); }
 .gruppe__titel { display: flex; align-items: baseline; gap: 14px; padding-bottom: 20px; font-size: clamp(2.2rem, 3.8vw, 3.2rem); border-bottom: 1px solid var(--ink); }
 .gruppe__titel span { font: 600 .8rem/1 var(--sans); letter-spacing: .1em; color: var(--blaa); }
-.hest { display: grid; grid-template-columns: 68px minmax(0, 1.5fr) minmax(0, .6fr) minmax(0, 2fr) 44px; grid-template-areas: "foto navn om tal link"; align-items: center; gap: 12px 24px; padding: 18px 0; border-bottom: 1px solid var(--linje); scroll-margin-top: 110px; }
-.hest__foto { grid-area: foto; display: grid; place-items: center; width: 68px; height: 68px; overflow: hidden; border-radius: 50%; background: var(--taage); font: italic 400 1.9rem/1 var(--serif); color: var(--blaa); }
-.hest__foto img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; }
+.hest { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, .6fr) minmax(0, 2fr) 44px; grid-template-areas: "navn om tal link"; align-items: center; gap: 12px 24px; padding: 18px 0; border-bottom: 1px solid var(--linje); scroll-margin-top: 110px; }
 .hest:target { background: var(--taage); box-shadow: -16px 0 0 var(--taage), 16px 0 0 var(--taage); }
 .hest__navn { grid-area: navn; }
 .hest__navn h3 { font: 400 clamp(1.5rem, 2vw, 1.8rem)/1.05 var(--serif); letter-spacing: -.01em; }
@@ -523,7 +521,7 @@ p.hest__tal--tom { display: block; font-size: .9rem; }
 @media (max-width: 1100px) {
   .top__tlf { display: none; }
   .noegletal { grid-template-columns: repeat(3, 1fr); row-gap: 12px; }
-  .hest { grid-template-columns: 68px minmax(0, 1.3fr) minmax(0, 2fr) 44px; grid-template-areas: "foto navn tal link" "foto om tal link"; row-gap: 4px; }
+  .hest { grid-template-columns: minmax(0, 1.3fr) minmax(0, 2fr) 44px; grid-template-areas: "navn tal link" "om tal link"; row-gap: 4px; }
   .hest__navn { align-self: end; }
   .hest__om { align-self: start; }
 }
@@ -614,8 +612,7 @@ p.hest__tal--tom { display: block; font-size: .9rem; }
   .tabel thead th { font-size: .58rem; letter-spacing: .08em; }
   .tabel caption { font-size: 1.7rem; }
 
-  .hest { grid-template-columns: 56px minmax(0, 1fr) 44px; grid-template-areas: "foto navn link" "foto om link" "tal tal tal"; gap: 2px 14px; padding: 18px 0; }
-  .hest__foto { width: 56px; height: 56px; font-size: 1.6rem; }
+  .hest { grid-template-columns: minmax(0, 1fr) 44px; grid-template-areas: "navn link" "om link" "tal tal"; gap: 2px 14px; padding: 18px 0; }
   .hest__navn { align-self: end; }
   .hest__om { align-self: start; }
   .hest__tal { padding-top: 10px; }

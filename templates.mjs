@@ -739,7 +739,6 @@ ${kontaktbaand()}`;
 
 const hesteraekke = (h, i) => `
       <li class="hest" id="hest-${h.id}" data-vis style="--i:${i % 6}">
-        <span class="hest__foto" aria-hidden="true">${HESTEFOTO[h.id] ? `<img src="${billedsti(HESTEFOTO[h.id][0], 560)}" width="560" height="700" alt=""${HESTEFOTO[h.id][1] ? ` style="object-position:${HESTEFOTO[h.id][1]}"` : ''} loading="lazy" decoding="async">` : esc(h.navn[0])}</span>
         <div class="hest__navn">
           <h3>${esc(h.navn)}</h3>
           <p>${afstamning(h)}</p>
