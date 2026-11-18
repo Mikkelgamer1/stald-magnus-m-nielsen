@@ -153,6 +153,8 @@ a:hover .ud { transform: translate(2px, -2px); }
 .hero__valg { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 32px; margin-top: clamp(26px, 3vw, 40px); }
 .hero__tekst > :not(h1), .hero h1 > span { animation: op 1.1s var(--ease) both; animation-delay: calc(var(--i, 0) * 120ms + 250ms); }
 
+/* Pc: toppen fylder mindst hele skærmen, så navnet står under hestens hoved, og hele fotoet kommer med – tallene ligger lige under folden */
+@media (min-width: 701px) { .hero { grid-template-rows: minmax(min(100svh, 1100px), auto) auto; } }
 .hero__tal { border-top: 1px solid rgba(255, 255, 255, .16); background: rgba(10, 20, 40, .4); backdrop-filter: blur(8px); animation: op 1.1s var(--ease) .9s both; }
 .hero__tal dl { display: grid; grid-template-columns: repeat(4, 1fr); }
 .hero__tal dl div { display: flex; flex-direction: column-reverse; justify-content: flex-end; gap: 8px; padding: clamp(20px, 2.2vw, 30px) clamp(16px, 2.2vw, 36px); border-left: 1px solid rgba(255, 255, 255, .14); }
