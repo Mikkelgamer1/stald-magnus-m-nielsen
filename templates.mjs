@@ -807,7 +807,7 @@ ${sidehoved({
   bred: 'loeb-aalborg',
   alt: 'Magnus M. Nielsen i sulkyen bag en sort travhest i fuld fart på Aalborg Væddeløbsbane',
   pos: '90% 40%',
-  posBred: '50% 35%',
+  posBred: '50% 80%',
 })}
 
 <section class="sek sek--tone sek--smal sek--taet-bund">
