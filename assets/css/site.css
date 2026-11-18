@@ -145,6 +145,7 @@ a:hover .ud { transform: translate(2px, -2px); }
   linear-gradient(0deg, rgba(10, 20, 40, .96) 0%, rgba(10, 20, 40, .7) 30%, rgba(10, 20, 40, .1) 66%),
   linear-gradient(90deg, rgba(10, 20, 40, .58) 0%, rgba(10, 20, 40, .3) 45%, rgba(10, 20, 40, 0) 82%),
   linear-gradient(rgba(10, 20, 40, .1), rgba(10, 20, 40, .1)); }
+.hero__tekst.wrap { width: auto; max-width: none; margin-inline: var(--kant); } /* teksten i toppen følger skærmens kant, også på brede skærme */
 .hero__tekst { align-self: end; padding-block: calc(var(--top-fuld) + 48px) clamp(36px, 5vw, 72px); }
 .hero .oje { margin-bottom: clamp(8px, 1vw, 14px); color: #fff; text-shadow: 0 1px 10px rgba(10, 20, 40, .6); }
 .hero__navn { display: block; font-size: clamp(3.9rem, 11.4vw, 10.5rem); line-height: .86; letter-spacing: -.022em; text-shadow: 0 2px 4px rgba(10, 20, 40, .5), 0 8px 34px rgba(10, 20, 40, .72), 0 0 90px rgba(10, 20, 40, .68); }
