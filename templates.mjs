@@ -531,7 +531,7 @@ const forside = (o) => `
       </div>
       <p data-vis style="--i:2">${o.heste.length} heste står på træningslisten lige nu${o.ungheste.length > 1 ? ` – ${o.ungheste.length} ungheste på vej og ${o.heste.length - o.ungheste.length} i løbsalderen` : ''}.</p>
     </div>
-    ${o.fotoheste.length ? `<div class="kortraekke">${o.fotoheste.slice(0, 4).map((h) => hestekort(h, `${R}heste/#hest-${h.id}`)).join('')}
+    ${o.fotoheste.length ? `<div class="kortraekke" style="--n:${Math.min(4, o.fotoheste.length)}">${o.fotoheste.slice(0, 4).map((h) => hestekort(h, `${R}heste/#hest-${h.id}`)).join('')}
     </div>` : ''}
     <p class="midt" data-vis>${knap('heste/', `Se alle ${o.heste.length} heste`, 'knap--kant')}</p>
   </div>

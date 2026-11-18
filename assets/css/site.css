@@ -229,7 +229,7 @@ a:hover .ud { transform: translate(2px, -2px); }
 /* ---------- hestekort ---------- */
 
 /* position: relative holder skjulte .sr-tekster inde i rullefeltet, så de ikke gør siden bredere på mobil. */
-.kortraekke { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(16px, 2vw, 32px); }
+.kortraekke { position: relative; display: grid; grid-template-columns: repeat(var(--n, 4), 1fr); /* kolonnerne følger antallet af kort, så rækken altid er fyldt ud */ gap: clamp(16px, 2vw, 32px); }
 .kortraekke--tre { grid-template-columns: repeat(3, 1fr); row-gap: clamp(40px, 5vw, 72px); }
 .kort { display: block; }
 .kort .billede { aspect-ratio: 4 / 5; margin-bottom: 20px; }
