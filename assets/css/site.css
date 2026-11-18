@@ -346,7 +346,7 @@ aside .valg { margin-top: 20px; }
 
 .baand { position: relative; isolation: isolate; display: grid; align-items: end; min-height: min(88vh, 880px); padding-block: clamp(64px, 9vw, 128px); overflow: clip; color: #fff; background: var(--ink); }
 .baand__billede { position: absolute; inset: 0; z-index: -2; }
-.baand__billede img { width: 100%; height: 100%; object-fit: cover; object-position: 62% 8%; }
+.baand__billede img { width: 100%; height: 100%; object-fit: cover; object-position: 62% 0%; } /* fotoets top, så ørerne kommer med */
 .baand::after { content: ""; position: absolute; inset: 0; z-index: -1; background:
   linear-gradient(90deg, rgba(10, 20, 40, .9) 0%, rgba(10, 20, 40, .58) 42%, rgba(10, 20, 40, .04) 78%),
   linear-gradient(0deg, rgba(10, 20, 40, .55) 0%, rgba(10, 20, 40, 0) 55%); }
@@ -507,7 +507,7 @@ p.hest__tal--tom { display: block; font-size: .9rem; }
 @supports (animation-timeline: scroll()) {
   @media (prefers-reduced-motion: no-preference) {
     .hero__billede { animation: glid linear both; animation-timeline: scroll(root); animation-range: 0 100vh; }
-    .baand__billede img, .resbane__billede img { animation: skub linear both; animation-timeline: view(); }
+    .resbane__billede img { animation: skub linear both; animation-timeline: view(); }
   }
 }
 
@@ -590,7 +590,7 @@ p.hest__tal--tom { display: block; font-size: .9rem; }
   .kortraekke .kort { flex: 0 0 72%; scroll-snap-align: start; }
 
   .baand { min-height: 92svh; }
-  .baand__billede img { object-position: 50% 20%; }
+  .baand__billede img { object-position: 50% 0%; }
   .baand::after { background: linear-gradient(0deg, rgba(10, 20, 40, .96) 0%, rgba(10, 20, 40, .8) 40%, rgba(10, 20, 40, .05) 75%); }
   .baand .knap { width: 100%; }
   .note .laes { display: flex; width: fit-content; margin: 6px 0 0; }
