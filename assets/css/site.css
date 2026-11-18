@@ -293,11 +293,18 @@ aside .valg { margin-top: 20px; }
 
 /* ---------- filmstribe og resultatbånd ---------- */
 
-.film { padding-block: clamp(14px, 2vw, 32px); overflow-x: auto; scrollbar-width: none; background: var(--lys-kant); }
-.film::-webkit-scrollbar { display: none; }
-.film__spor { display: flex; gap: clamp(10px, 1.4vw, 20px); width: max-content; padding-inline: var(--kant); }
-.film__spor li { flex: none; height: clamp(250px, 36vw, 520px); aspect-ratio: var(--r); overflow: hidden; }
+/* Billedstriben: fem billeder side om side inden for sidens bredde (pc), alle syv kan swipes (mobil) */
+.film { padding-block: clamp(14px, 2vw, 32px); background: var(--lys-kant); }
+.film__spor { display: grid; grid-template-columns: repeat(5, 1fr); gap: clamp(10px, 1.4vw, 20px); width: min(100% - 2 * var(--kant), var(--max)); margin-inline: auto; }
+.film__spor li { aspect-ratio: 3 / 4; overflow: hidden; }
+.film__spor li:nth-child(n + 6) { display: none; }
 .film__spor img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 900px) {
+  .film { overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: var(--kant); scrollbar-width: none; }
+  .film::-webkit-scrollbar { display: none; }
+  .film__spor { display: flex; width: max-content; margin: 0; padding-inline: var(--kant); }
+  .film__spor li, .film__spor li:nth-child(n + 6) { display: block; flex: none; width: clamp(200px, 62vw, 320px); scroll-snap-align: start; }
+}
 
 .resbane { padding-bottom: var(--luft); }
 .resbane__billede { position: relative; height: clamp(280px, 46vw, 640px); overflow: clip; }
@@ -486,7 +493,6 @@ p.hest__tal--tom { display: block; font-size: .9rem; }
 @keyframes zoom { from { transform: scale(1.07); } }
 @keyframes glid { to { transform: translateY(9%); } }
 @keyframes skub { from { transform: translateY(-5%) scale(1.1); } to { transform: translateY(5%) scale(1.1); } }
-@keyframes film { to { transform: translateX(calc(100vw - 100%)); } }
 
 .js [data-vis] { opacity: 0; transform: translateY(22px); transition: opacity .9s var(--ease), transform .9s var(--ease); transition-delay: calc(var(--i, 0) * 90ms); }
 .js [data-vis].ses { opacity: 1; transform: none; }
@@ -500,9 +506,6 @@ p.hest__tal--tom { display: block; font-size: .9rem; }
   @media (prefers-reduced-motion: no-preference) {
     .hero__billede { animation: glid linear both; animation-timeline: scroll(root); animation-range: 0 100vh; }
     .baand__billede img, .resbane__billede img { animation: skub linear both; animation-timeline: view(); }
-    /* Filmstriben glider sidelæns, mens man scroller forbi. Uden understøttelse kan den rulles med fingeren. */
-    .film { overflow: hidden; }
-    .film__spor { animation: film linear both; animation-timeline: view(); animation-range: entry 20% exit 80%; }
   }
 }
 

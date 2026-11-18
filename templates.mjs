@@ -514,11 +514,11 @@ const forside = (o) => `
     ['stald-lys', 'Brun travhest i den lyse staldgang'],
     ['stald-fold', 'Travhest med hue og dækken foran foldene'],
     ['stald-moerk', 'Mørk travhest set tæt på i stalden'],
-    ['stald-detalje', 'Brun travhest med hue og bandager – staldens logo sidder på hovklokkerne'],
     ['stald-bandager', 'Travhest med blå bandager i staldgangen'],
+    ['stald-detalje', 'Brun travhest med hue og bandager – staldens logo sidder på hovklokkerne'],
     ['stald-blik', 'Travhest kigger frem fra staldgangen'],
   ].map(([navn, alt]) => `
-    <li style="--r:${BILLEDER[navn][0]}">${img(navn, alt, { sizes: `(min-width: 1445px) ${Math.round(520 * BILLEDER[navn][0])}px, ${Math.round(36 * BILLEDER[navn][0])}vw` })}</li>`).join('')}
+    <li style="--r:${BILLEDER[navn][0]}">${img(navn, alt, { sizes: '(min-width: 1500px) 270px, (min-width: 901px) 19vw, 62vw' })}</li>`).join('')}
   </ul>
 </section>
 
