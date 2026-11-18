@@ -20,58 +20,47 @@ export const SITE = {
   kort: 'https://www.google.com/maps/search/?api=1&query=Flyvej+16%2C+7800+Skive',
 };
 
-// Billeder af enkelte heste (hest-id fra Travinfo → filnavn i assets/img).
+// Billeder af enkelte heste (hest-id fra Travinfo → [filnavn i assets/img, evt. fokuspunkt]).
 // Forlader hesten træningslisten, forsvinder kortet af sig selv.
 const HESTEFOTO = {
-  651228: 'hest-karat-c-n',
-  658484: 'hest-cala-karamell',
-  645166: 'hest-glad-nock',
-  646886: 'hest-hernando',
-  657848: 'hest-giovanni',
-  657408: 'hest-manta-ray-cash',
-  659474: 'hest-giulia-di-masi',
+  651228: ['hest-karat-c-n'],
+  658484: ['hest-cala-karamell'],
+  646886: ['hest-hernando'],
+  657408: ['aften'],
+  659474: ['hest-giulia-di-masi'],
 };
 
+// Alle fotos er staldens egne billeder fra Facebook, uden beskæring, filtre eller AI.
+// Originalerne ligger i originaler/ (kun lokalt). Den største bredde er originalfilen uændret;
+// de mindre er kun skaleret ned. Udsnittet på siden vælges med CSS (object-position), ikke i filen.
 // navn: [forhold bredde/højde, ...bredder]
 const BILLEDER = {
-  'hero': [1.763, 1000, 1600, 2400],
-  'hero-mobil': [0.751, 800, 1200],
-  'magnus': [0.8, 480, 680],
-  'magnus-giovanni': [1.764, 800, 1280, 2000, 2800],
-  'stald-gang': [0.751, 600, 900, 1400],
-  'stald-vask': [0.751, 500, 800, 1200],
-  'stald-fold': [0.75, 500, 800, 1200],
-  'stald-hest': [0.8, 600, 1000, 1400],
-  'stald-detalje': [1, 500, 900],
-  'aften': [0.751, 800, 1200],
-  'aften-bred': [1.5, 1000, 1600, 2400],
-  'hest-karat-c-n': [0.8, 560, 900],
-  'hest-cala-karamell': [0.8, 560, 900],
-  'hest-glad-nock': [0.8, 560, 900],
-  'hest-hernando': [0.8, 560, 900],
-  'hest-giovanni': [0.8, 560, 900],
-  'hest-manta-ray-cash': [0.8, 560, 900],
-  'hest-giulia-di-masi': [0.8, 560, 900],
-  'magnus-sulky': [0.75, 640, 1000],
-  'side-resultater': [0.75, 600, 900, 1400],
-  'i-loeb': [1.778, 800, 1280, 2000],
-  'stald-sele': [0.8, 500, 800, 1200],
-  'stald-lys': [0.75, 500, 800, 1200],
-  'stald-moerk': [0.75, 500, 800, 1200],
-  'stald-ro': [0.75, 500, 800, 1200],
-  'stald-bandager': [0.75, 640, 1000],
-  'stald-blik': [0.75, 640, 1000],
-  'flise-1': [1, 320, 600],
-  'flise-2': [1, 320, 600],
-  'flise-3': [1, 320, 600],
-  'side-resultater-bred': [1.5, 1200, 1800, 2400],
-  'hoved-stalden': [0.75, 600, 900, 1400],
-  'hoved-stalden-bred': [1.5, 1200, 1800, 2400],
-  'hoved-heste': [0.75, 600, 900, 1400],
-  'hoved-heste-bred': [1.5, 1200, 1800, 2400],
-  'hoved-kontakt': [0.75, 600, 900, 1400],
-  'hoved-kontakt-bred': [1.5, 1200, 1800, 2400],
+  'hero': [1.353, 800, 1200, 1461],
+  'magnus': [1.413, 600, 1200],
+  'hest-karat-c-n': [0.75, 560, 900, 3072],
+  'hest-cala-karamell': [0.751, 560, 900, 3077],
+  'hest-giulia-di-masi': [0.751, 560, 900, 3077],
+  'hest-hernando': [0.75, 560, 900, 1536],
+  'aften': [0.751, 560, 900, 1200, 1600, 2400, 3077],
+  'stald-gang': [0.751, 600, 900, 1400, 3077],
+  'stald-vask': [0.751, 500, 800, 1200, 3077],
+  'stald-fold': [0.75, 500, 800, 1200, 3072],
+  'stald-hest': [0.75, 600, 1000, 1400, 3072],
+  'stald-detalje': [0.75, 500, 900, 3072],
+  'stald-sele': [0.828, 500, 800, 1200, 3390],
+  'stald-lys': [0.75, 500, 800, 1200, 3072],
+  'stald-moerk': [0.751, 500, 800, 1200, 3077],
+  'stald-ro': [0.751, 320, 600, 800, 1200, 3077],
+  'stald-bandager': [0.75, 640, 1000, 1536],
+  'stald-blik': [0.75, 640, 1000, 3072],
+  'flise-1': [0.75, 320, 600, 1536],
+  'flise-2': [0.751, 320, 600, 3077],
+  'hoved-stalden': [0.751, 600, 900, 1400, 3077],
+  'hoved-heste': [1.333, 600, 900, 1200, 1800, 2400, 3072],
+  'hoved-kontakt': [0.75, 600, 900, 1400, 3072],
 };
+// Fokuspunkt for fotos, hvor motivet ikke står i midten (bruges, når feltet har en anden form end fotoet).
+const FOKUS = { magnus: '66% 40%' };
 
 const BANER = { Sk: 'Skive', 'Ål': 'Aalborg', 'År': 'Aarhus', Od: 'Odense', Ch: 'Charlottenlund', Bi: 'Billund', Bh: 'Bornholm', Ny: 'Nykøbing F.', Bs: 'Skovbo', Kl: 'Klampenborg' };
 // Banernes omtrentlige placering [længdegrad, breddegrad] til det skematiske Danmarkskort (Bornholm ligger uden for kortet).
@@ -115,11 +104,12 @@ const ekstern = (href, tekst, cls = 'laes') => `<a class="${cls}" href="${href}"
 const knap = (href, tekst, cls = '') => `<a class="knap ${cls}" href="${R}${href}">${tekst} ${pil}</a>`;
 const laes = (href, tekst) => `<a class="laes" href="${R}${href}">${tekst} ${pil}</a>`;
 
-const img = (navn, alt, { sizes = '100vw', lazy = true } = {}) => {
+const billedsti = (navn, w) => `${R}assets/img/${navn}-${w}.jpg`;
+const srcset = (navn) => BILLEDER[navn].slice(1).map((w) => `${billedsti(navn, w)} ${w}w`).join(', ');
+const img = (navn, alt, { sizes = '100vw', lazy = true, pos = FOKUS[navn] } = {}) => {
   const [forhold, ...bredder] = BILLEDER[navn];
   const max = bredder.at(-1);
-  const src = (w) => `${R}assets/img/${navn}-${w}.webp`;
-  return `<img src="${src(bredder[Math.min(1, bredder.length - 1)])}" srcset="${bredder.map((w) => `${src(w)} ${w}w`).join(', ')}" sizes="${sizes}" width="${max}" height="${Math.round(max / forhold)}" alt="${esc(alt)}"${lazy ? ' loading="lazy" decoding="async"' : ' fetchpriority="high"'}>`;
+  return `<img src="${billedsti(navn, bredder[Math.min(1, bredder.length - 1)])}" srcset="${srcset(navn)}" sizes="${sizes}" width="${max}" height="${Math.round(max / forhold)}" alt="${esc(alt)}"${pos ? ` style="object-position:${pos}"` : ''}${lazy ? ' loading="lazy" decoding="async"' : ' fetchpriority="high"'}>`;
 };
 const figur = (navn, alt, tekst, opt) => `<figure class="figur"><div class="billede" data-vis="billede">${img(navn, alt, opt)}</div>${tekst ? `<figcaption>${tekst}</figcaption>` : ''}</figure>`;
 
@@ -321,7 +311,7 @@ ${bund(o)}
 const sidehoved = ({ oje, h1, tekst, billede, bred, alt, pos = '50% 30%', posBred = '50% 30%' }) => `
 <section class="sidehoved${bred ? ' sidehoved--fuld' : ''}">
   <picture class="sidehoved__billede" style="--pos:${pos};--pos-bred:${posBred}">${bred ? `
-    <source media="(max-aspect-ratio: 1/1)" srcset="${BILLEDER[billede].slice(1).map((w) => `${R}assets/img/${billede}-${w}.webp ${w}w`).join(', ')}" sizes="100vw">` : ''}
+    <source media="(max-aspect-ratio: 1/1)" srcset="${srcset(billede)}" sizes="100vw">` : ''}
     ${img(bred ?? billede, alt, { sizes: bred ? '100vw' : '(min-width: 961px) 50vw, 100vw', lazy: false })}
   </picture>
   <div class="wrap">
@@ -402,7 +392,7 @@ const sejre = (h) => Number(h.placeringer.split('-')[0]) || 0;
 
 const hestekort = (h, href, eksternt) => `
       <a class="kort" href="${href}"${eksternt ? ' target="_blank" rel="noopener"' : ''}>
-        <div class="billede" data-vis="billede">${img(HESTEFOTO[h.id], `Travhesten ${h.navn}`, { sizes: '(min-width: 1000px) 22vw, (min-width: 640px) 45vw, 72vw' })}</div>
+        <div class="billede" data-vis="billede">${img(HESTEFOTO[h.id][0], `Travhesten ${h.navn}`, { sizes: '(min-width: 1000px) 22vw, (min-width: 640px) 45vw, 72vw', pos: HESTEFOTO[h.id][1] })}</div>
         <h3>${esc(h.navn)}</h3>
         <p>${omHest(h)} · ${afstamning(h)}</p>
         <p class="kort__tal">${!h.starter ? 'Ustartet' : `${kr(h.praemier)} · ${sejre(h) ? `${sejre(h)} ${sejre(h) === 1 ? 'sejr' : 'sejre'}` : `${h.starter} ${h.starter === 1 ? 'start' : 'starter'}`}`}${eksternt ? nyFane : ''}</p>
@@ -430,8 +420,7 @@ const ydelser = (o) => `
 const ejerbaand = () => `
 <section class="baand">
   <picture class="baand__billede">
-    <source media="(max-width: 700px)" srcset="${R}assets/img/aften-800.webp 800w, ${R}assets/img/aften-1200.webp 1200w" sizes="100vw">
-    ${img('aften-bred', 'Ung travhest på folden i aftenlys')}
+    ${img('aften', 'Ung travhest på folden i aftenlys')}
   </picture>
   <div class="wrap baand__tekst">
     <p class="oje" data-vis>For hesteejere</p>
@@ -466,7 +455,6 @@ const statTabel = (titel, raekker) => `
 const forside = (o) => `
 <section class="hero">
   <picture class="hero__billede">
-    <source media="(max-aspect-ratio: 1/1)" srcset="${R}assets/img/hero-mobil-800.webp 800w, ${R}assets/img/hero-mobil-1200.webp 1200w" sizes="100vw">
     ${img('hero', 'Magnus M. Nielsen i sulkyen bag en travhest i fuld fart', { lazy: false })}
   </picture>
   <div class="wrap hero__tekst">
@@ -522,12 +510,11 @@ const forside = (o) => `
 
 <section class="film" aria-label="Billeder fra stalden og banen">
   <ul class="film__spor">${[
-    ['stald-sele', 'Travhest med løbstøj i staldgangen'],
-    ['i-loeb', 'Magnus M. Nielsen i sulkyen bag en travhest i fuld fart'],
+    ['stald-hest', 'Mørk travhest med hue i staldgangen'],
     ['stald-lys', 'Brun travhest i den lyse staldgang'],
     ['stald-fold', 'Travhest med hue og dækken foran foldene'],
     ['stald-moerk', 'Mørk travhest set tæt på i stalden'],
-    ['hest-glad-nock', 'Travhest i fuld fart på banen'],
+    ['stald-detalje', 'Brun travhest med hue og bandager – staldens logo sidder på hovklokkerne'],
     ['stald-bandager', 'Travhest med blå bandager i staldgangen'],
     ['stald-blik', 'Travhest kigger frem fra staldgangen'],
   ].map(([navn, alt]) => `
@@ -551,7 +538,7 @@ const forside = (o) => `
 </section>
 
 <section class="sek--mork resbane">
-  <div class="resbane__billede">${img('magnus-giovanni', 'Magnus M. Nielsen i sulkyen bag travhesten Giovanni')}</div>
+  <div class="resbane__billede">${img('stald-sele', 'Travhest med løbstøj på væddeløbsbanen i Aalborg', { pos: '62% 6%' })}</div>
   <div class="wrap duo duo--top">
     <div class="duo__tekst">
       <p class="oje" data-vis>Resultater</p>
@@ -591,7 +578,7 @@ ${ejerbaand()}
       <div class="fliser">
         <div class="billede" data-vis="billede">${img('flise-1', 'Travhest med blis i staldgangen', { sizes: '(min-width: 961px) 13vw, 30vw' })}</div>
         <div class="billede" data-vis="billede" style="--i:1">${img('flise-2', 'Travhest i staldgangen', { sizes: '(min-width: 961px) 13vw, 30vw' })}</div>
-        <div class="billede" data-vis="billede" style="--i:2">${img('flise-3', 'Travhest står i staldgangen', { sizes: '(min-width: 961px) 13vw, 30vw' })}</div>
+        <div class="billede" data-vis="billede" style="--i:2">${img('stald-ro', 'Travhest står i staldgangen', { sizes: '(min-width: 961px) 13vw, 30vw' })}</div>
       </div>
       <ul class="some" data-vis style="--i:2">
         <li><a href="${SITE.facebook}" target="_blank" rel="noopener"><span>Facebook</span><b>${SITE.navn}</b>${ud}${nyFane}</a></li>
@@ -607,11 +594,9 @@ ${sidehoved({
   oje: 'Om Magnus',
   h1: 'Om <em>Magnus</em>',
   tekst: `Professionel travtræner og kusk med A1-licens. Født i ${data.traener.foedt} – og med ${esc(data.traener.hjemmebane)} som hjemmebane.`,
-  billede: 'magnus-sulky',
-  bred: 'magnus-giovanni',
-  alt: 'Magnus M. Nielsen i sulkyen bag travhesten Giovanni',
-  pos: '50% 22%',
-  posBred: '50% 28%',
+  billede: 'stald-sele',
+  alt: 'Travhest med løbstøj på væddeløbsbanen i Aalborg',
+  pos: '55% 20%',
 })}
 
 <section class="sek">
@@ -639,12 +624,6 @@ ${sidehoved({
       <p data-vis>Lige nu står ${o.heste.length} heste på træningslisten. I ${o.saeson.aar} har stalden vundet ${o.saeson.sejre} løb på ${o.saeson.starter} starter, og som kusk har Magnus vundet ${o.kusk.sejre} løb i samme sæson.</p>
       <p data-vis>Blandt højdepunkterne i 2026 er tre vindere på samme løbsdag på hjemmebanen 10. juni, Kriteriumsvinderen Karat C N, der vandt i Aalborg to uger efter debuten for stalden, og en tredjeplads til Hit Me i DM for hopper på Fyn.</p>
     </div>
-  </div>
-</section>
-
-<section class="sek sek--flad">
-  <div class="wrap">
-    ${figur('i-loeb', 'Magnus M. Nielsen i sulkyen bag en travhest i fuld fart', 'Magnus M. Nielsen i fuld fart.', { sizes: '(min-width: 1500px) 1400px, 92vw' })}
   </div>
 </section>
 
@@ -689,7 +668,6 @@ ${sidehoved({
   h1: 'Stalden <em>i Skive</em>',
   tekst: `På Flyvej i Skive – samme vej som hjemmebanen Skive Trav – har ${SITE.navn} ${o.heste.length} heste i træning.`,
   billede: 'hoved-stalden',
-  bred: 'hoved-stalden-bred',
   alt: 'Brun travhest i staldgangen under ovenlysvinduerne',
   pos: '62% 20%',
   posBred: '50% 3%',
@@ -706,8 +684,8 @@ ${sidehoved({
     </div>
     <div class="galleri">${[
       ['stald-hest', 'Mørk travhest med hue i staldgangen – med staldens navneskilt på grimen', 'Staldens navn på grimen.'],
-      ['stald-sele', 'Travhest med løbstøj i staldgangen', 'Selet op i staldgangen.'],
-      ['stald-detalje', 'Hovklokke med staldens logo', 'Logoet helt ned på hovklokkerne.'],
+      ['stald-sele', 'Travhest med løbstøj på væddeløbsbanen i Aalborg', 'Selet op på væddeløbsbanen i Aalborg.'],
+      ['stald-detalje', 'Brun travhest med hue og bandager – staldens logo sidder på hovklokkerne', 'Logoet helt ned på hovklokkerne.'],
       ['stald-lys', 'Brun travhest i den lyse staldgang', ''],
       ['stald-fold', 'Travhest med hue og dækken foran foldene', 'Ude ved foldene.'],
       ['stald-moerk', 'Mørk travhest set tæt på i stalden', ''],
@@ -758,7 +736,7 @@ ${kontaktbaand()}`;
 
 const hesteraekke = (h, i) => `
       <li class="hest" id="hest-${h.id}" data-vis style="--i:${i % 6}">
-        <span class="hest__foto" aria-hidden="true">${HESTEFOTO[h.id] ? `<img src="${R}assets/img/${HESTEFOTO[h.id]}-560.webp" width="560" height="700" alt="" loading="lazy" decoding="async">` : esc(h.navn[0])}</span>
+        <span class="hest__foto" aria-hidden="true">${HESTEFOTO[h.id] ? `<img src="${billedsti(HESTEFOTO[h.id][0], 560)}" width="560" height="700" alt=""${HESTEFOTO[h.id][1] ? ` style="object-position:${HESTEFOTO[h.id][1]}"` : ''} loading="lazy" decoding="async">` : esc(h.navn[0])}</span>
         <div class="hest__navn">
           <h3>${esc(h.navn)}</h3>
           <p>${afstamning(h)}</p>
@@ -784,9 +762,9 @@ ${sidehoved({
   h1: 'Heste <em>i<br>træning</em>',
   tekst: `${o.heste.length} heste står lige nu på træningslisten hos Magnus M. Nielsen. Listen kommer direkte fra Dansk Hestevæddeløb og følger automatisk med, når heste kommer til eller rejser videre.`,
   billede: 'hoved-heste',
-  bred: 'hoved-heste-bred',
+  bred: 'hoved-heste',
   alt: 'To heste på folden ved stalden',
-  pos: '62% 45%',
+  pos: '36% 45%',
   posBred: '50% 45%',
 })}
 ${o.fotoheste.length ? `
@@ -819,11 +797,9 @@ ${sidehoved({
   oje: 'Resultater',
   h1: 'Staldens <em>resultater</em>',
   tekst: `Staldens seneste starter, kommende løb og sæsonens tal. Data kommer fra Dansk Hestevæddeløb og er senest opdateret ${o.opdateret}.`,
-  billede: 'side-resultater',
-  bred: 'side-resultater-bred',
-  alt: 'Travhest i fuld fart på banen',
-  pos: '60% 35%',
-  posBred: '50% 12%',
+  billede: 'aften',
+  alt: 'Ung travhest på folden i aftenlys',
+  pos: '62% 18%',
 })}
 
 <section class="sek sek--tone sek--smal sek--taet-bund">
@@ -887,7 +863,6 @@ ${sidehoved({
   h1: 'Kontakt <em>Magnus</em>',
   tekst: 'Har du en hest, der skal i træning, eller et spørgsmål til stalden? Ring, send en sms eller skriv en mail.',
   billede: 'hoved-kontakt',
-  bred: 'hoved-kontakt-bred',
   alt: 'Mørkebrun travhest i staldgangen',
   pos: '58% 8%',
   posBred: '50% 3%',

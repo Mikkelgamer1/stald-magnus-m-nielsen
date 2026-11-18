@@ -97,6 +97,9 @@ a:hover .ud { transform: translate(2px, -2px); }
 .top::before { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(10, 20, 40, .92); border-bottom: 1px solid rgba(255, 255, 255, .08); backdrop-filter: blur(14px) saturate(1.3); opacity: 0; transition: opacity .35s; }
 .er-scrollet .top::before { opacity: 1; }
 .top__inner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; height: var(--top); transition: height .4s var(--ease); }
+/* Øverst på siden står menu og logo lidt over midten af toppen; når man scroller, centreres de igen. */
+.top__inner { padding-bottom: 16px; transition: height .4s var(--ease), padding .4s var(--ease); }
+.er-scrollet .top__inner { padding-bottom: 0; }
 .top__nav { display: flex; gap: clamp(18px, 2.4vw, 40px); }
 .top__nav a { text-shadow: 0 0 16px rgba(10, 20, 40, .65); }
 /* Telefonnummer og menuknap ligger oven på billeder: en mørk brik bag teksten holder dem læselige uanset motivet. */
@@ -139,16 +142,16 @@ a:hover .ud { transform: translate(2px, -2px); }
 
 .hero { position: relative; isolation: isolate; display: grid; grid-template-rows: 1fr auto; min-height: min(100svh, 1100px); overflow: clip; color: #fff; background: var(--ink); }
 .hero__billede { position: absolute; inset: 0; z-index: -2; }
-.hero__billede img { width: 100%; height: 100%; object-fit: cover; object-position: 46% 42%; animation: zoom 2.4s var(--ease) both; }
+.hero__billede img { width: 100%; height: 100%; object-fit: cover; object-position: 46% 6%; animation: zoom 2.4s var(--ease) both; }
 .hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background:
   linear-gradient(180deg, rgba(10, 20, 40, .6) 0%, rgba(10, 20, 40, 0) 24%),
   linear-gradient(0deg, rgba(10, 20, 40, .96) 0%, rgba(10, 20, 40, .7) 30%, rgba(10, 20, 40, .1) 66%),
   linear-gradient(90deg, rgba(10, 20, 40, .58) 0%, rgba(10, 20, 40, .3) 45%, rgba(10, 20, 40, 0) 82%),
   linear-gradient(rgba(10, 20, 40, .1), rgba(10, 20, 40, .1)); }
-.hero__tekst { align-self: end; padding-block: calc(var(--top-fuld) + 48px) clamp(36px, 5vw, 72px); }
+.hero__tekst { align-self: end; padding-block: calc(var(--top-fuld) + 48px) clamp(4px, .6vw, 10px); }
 .hero .oje { color: #fff; text-shadow: 0 1px 10px rgba(10, 20, 40, .6); }
-.hero__navn { display: block; font-size: clamp(3.9rem, 11.4vw, 10.5rem); line-height: .86; letter-spacing: -.022em; text-shadow: 0 2px 4px rgba(10, 20, 40, .5), 0 8px 34px rgba(10, 20, 40, .72), 0 0 90px rgba(10, 20, 40, .68); }
-.hero__titel { display: block; margin-top: clamp(16px, 1.8vw, 28px); font: italic 400 clamp(1.5rem, 2.7vw, 2.5rem)/1.1 var(--serif); letter-spacing: 0; color: rgba(255, 255, 255, .95); text-shadow: 0 1px 2px rgba(10, 20, 40, .4), 0 2px 18px rgba(10, 20, 40, .6); }
+.hero__navn { display: block; font-size: clamp(2.8rem, 7.2vw, 6.6rem); line-height: .86; letter-spacing: -.022em; text-shadow: 0 2px 4px rgba(10, 20, 40, .5), 0 8px 34px rgba(10, 20, 40, .72), 0 0 90px rgba(10, 20, 40, .68); }
+.hero__titel { display: block; margin-top: clamp(16px, 1.8vw, 28px); font: italic 400 clamp(1.3rem, 2.2vw, 2.05rem)/1.1 var(--serif); letter-spacing: 0; color: rgba(255, 255, 255, .95); text-shadow: 0 1px 2px rgba(10, 20, 40, .4), 0 2px 18px rgba(10, 20, 40, .6); }
 .hero__indled { max-width: 520px; margin-top: clamp(20px, 2.2vw, 32px); font-size: clamp(1.02rem, 1.25vw, 1.15rem); color: rgba(255, 255, 255, .9); text-shadow: 0 1px 2px rgba(10, 20, 40, .4), 0 2px 14px rgba(10, 20, 40, .55); }
 .hero__valg { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 32px; margin-top: clamp(26px, 3vw, 40px); }
 .hero__tekst > :not(h1), .hero h1 > span { animation: op 1.1s var(--ease) both; animation-delay: calc(var(--i, 0) * 120ms + 250ms); }
@@ -335,7 +338,7 @@ aside .valg { margin-top: 20px; }
 
 .baand { position: relative; isolation: isolate; display: grid; align-items: end; min-height: min(88vh, 880px); padding-block: clamp(64px, 9vw, 128px); overflow: clip; color: #fff; background: var(--ink); }
 .baand__billede { position: absolute; inset: 0; z-index: -2; }
-.baand__billede img { width: 100%; height: 100%; object-fit: cover; object-position: 62% 30%; }
+.baand__billede img { width: 100%; height: 100%; object-fit: cover; object-position: 62% 8%; }
 .baand::after { content: ""; position: absolute; inset: 0; z-index: -1; background:
   linear-gradient(90deg, rgba(10, 20, 40, .9) 0%, rgba(10, 20, 40, .58) 42%, rgba(10, 20, 40, .04) 78%),
   linear-gradient(0deg, rgba(10, 20, 40, .55) 0%, rgba(10, 20, 40, 0) 55%); }
@@ -559,7 +562,7 @@ p.hest__tal--tom { display: block; font-size: .9rem; }
 
 /* Højformat (mobil og tablet på højkant): heroen bruger portrætbilledet. */
 @media (max-aspect-ratio: 1/1) {
-  .hero__billede img { object-position: 4% top; }
+  .hero__billede img { object-position: 30% 40%; }
   .hero::after { background:
     linear-gradient(180deg, rgba(10, 20, 40, .55) 0%, rgba(10, 20, 40, 0) 22%),
     linear-gradient(0deg, rgba(10, 20, 40, .98) 0%, rgba(10, 20, 40, .88) 34%, rgba(10, 20, 40, .52) 60%, rgba(10, 20, 40, .1) 84%); }

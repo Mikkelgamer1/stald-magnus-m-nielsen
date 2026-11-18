@@ -36,7 +36,7 @@ Andre muligheder: Netlify eller Cloudflare Pages (build-kommando `node build.mjs
 | Billeder af enkelte heste | `HESTEFOTO` i `templates.mjs` (hest-id → filnavn) |
 | Banernes placering på kortet | `BANE_POS` i `templates.mjs` |
 | Farver, typografi, layout | `assets/css/site.css` |
-| Billeder | `assets/img/` – erstat filen med samme navn og størrelse |
+| Billeder | `assets/img/` – staldens egne fotos fra Facebook, uden beskæring, filtre eller AI. Hvert foto ligger i flere bredder (`navn-bredde.jpg`); den største er originalfilen uændret, de andre er kun skaleret ned. Udsnittet på siden styres med CSS |
 
 Tjeklisten før lancering og listen over midlertidige billeder ligger i `LANCERING.md`, som kun findes lokalt.
 
