@@ -299,6 +299,7 @@ aside .valg { margin-top: 20px; }
 .film__spor li { aspect-ratio: 3 / 4; overflow: hidden; }
 .film__spor li:nth-child(n + 6) { display: none; }
 .film__spor img { width: 100%; height: 100%; object-fit: cover; }
+.film + .sek { padding-top: clamp(36px, 4vw, 60px); } /* mindre luft lige efter billedstriben */
 @media (max-width: 900px) {
   .film { overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: var(--kant); scrollbar-width: none; }
   .film::-webkit-scrollbar { display: none; }
