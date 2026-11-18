@@ -37,6 +37,8 @@ const HESTEFOTO = {
 const BILLEDER = {
   'hero': [1.353, 800, 1200, 1461],
   'magnus': [1.413, 600, 1200],
+  'magnus-kjeld': [2.127, 800, 1200, 1570], // foto: Kjeld Mikkelsen (brugt med tilladelse)
+  'loeb-aalborg': [1.861, 800, 1200, 1500], // Magnus bag nr. 3 i Aalborg, staldens Facebook 24.9.2026
   'hest-karat-c-n': [0.75, 560, 900, 3072],
   'hest-cala-karamell': [0.751, 560, 900, 3077],
   'hest-giulia-di-masi': [0.751, 560, 900, 3077],
@@ -308,11 +310,11 @@ ${bund(o)}
 // Sidehoved. Normalt vises hele det høje billede (`billede`) til højre uden noget ovenpå, med teksten ved siden af.
 // Har siden også et bredt billede (`bred`), fylder det hele feltet på liggende skærme med teksten ovenpå.
 // På smalle og stående skærme ligger det høje billede altid bag teksten.
-const sidehoved = ({ oje, h1, tekst, billede, bred, alt, pos = '50% 30%', posBred = '50% 30%' }) => `
+const sidehoved = ({ oje, h1, tekst, billede, bred, alt, pos = '50% 30%', posBred = '50% 30%', kredit = '' }) => `
 <section class="sidehoved${bred ? ' sidehoved--fuld' : ''}">
   <picture class="sidehoved__billede" style="--pos:${pos};--pos-bred:${posBred}">${bred ? `
     <source media="(max-aspect-ratio: 1/1)" srcset="${srcset(billede)}" sizes="100vw">` : ''}
-    ${img(bred ?? billede, alt, { sizes: bred ? '100vw' : '(min-width: 961px) 50vw, 100vw', lazy: false })}
+    ${img(bred ?? billede, alt, { sizes: bred ? '100vw' : '(min-width: 961px) 50vw, 100vw', lazy: false, pos: null })}
   </picture>
   <div class="wrap">
     <div class="sidehoved__tekst">
@@ -320,7 +322,8 @@ const sidehoved = ({ oje, h1, tekst, billede, bred, alt, pos = '50% 30%', posBre
       <h1>${h1}</h1>
       <p class="indled">${tekst}</p>
     </div>
-  </div>
+  </div>${kredit ? `
+  <p class="sidehoved__kredit">${esc(kredit)}</p>` : ''}
 </section>`;
 
 /**
@@ -594,11 +597,12 @@ ${sidehoved({
   oje: 'Om Magnus',
   h1: 'Om <em>Magnus</em>',
   tekst: `Professionel travtræner og kusk med A1-licens. Født i ${data.traener.foedt} – og med ${esc(data.traener.hjemmebane)} som hjemmebane.`,
-  billede: 'stald-sele',
-  bred: 'stald-sele',
-  alt: 'Travhest med løbstøj på væddeløbsbanen i Aalborg',
-  pos: '55% 20%',
-  posBred: '55% 18%',
+  billede: 'magnus-kjeld',
+  bred: 'magnus-kjeld',
+  alt: 'Magnus M. Nielsen i sulkyen i staldens farver',
+  pos: '46% 30%',
+  posBred: '50% 0%',
+  kredit: 'Foto: Kjeld Mikkelsen',
 })}
 
 <section class="sek">
@@ -799,11 +803,11 @@ ${sidehoved({
   oje: 'Resultater',
   h1: 'Staldens <em>resultater</em>',
   tekst: `Staldens seneste starter, kommende løb og sæsonens tal. Data kommer fra Dansk Hestevæddeløb og er senest opdateret ${o.opdateret}.`,
-  billede: 'aften',
-  bred: 'aften',
-  alt: 'Ung travhest på folden i aftenlys',
-  pos: '62% 18%',
-  posBred: '50% 14%',
+  billede: 'loeb-aalborg',
+  bred: 'loeb-aalborg',
+  alt: 'Magnus M. Nielsen i sulkyen bag en sort travhest i fuld fart på Aalborg Væddeløbsbane',
+  pos: '90% 40%',
+  posBred: '50% 35%',
 })}
 
 <section class="sek sek--tone sek--smal sek--taet-bund">

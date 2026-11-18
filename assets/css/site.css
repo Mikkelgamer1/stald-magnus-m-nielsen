@@ -386,10 +386,11 @@ aside .valg { margin-top: 20px; }
 
 .sidehoved { position: relative; isolation: isolate; display: grid; align-items: end; min-height: clamp(560px, min(84vh, 60vw), 880px); padding-top: calc(var(--top-fuld) + 32px); overflow: clip; color: #fff; background: var(--ink); }
 /* Teksten holder sig til venstre halvdel, så den aldrig går ind over billedet. */
-.sidehoved__tekst { position: relative; max-width: calc(50vw + 24px - max(var(--kant), (100vw - var(--max)) / 2)); padding-bottom: clamp(48px, 6vw, 96px); }
+.sidehoved__tekst { position: relative; max-width: calc(50vw + 24px - max(var(--kant), (100vw - var(--max)) / 2)); padding-bottom: clamp(30px, 3.6vw, 60px); }
 .sidehoved--enkel { min-height: 100svh; align-items: center; }
 .sidehoved--enkel .sidehoved__tekst { max-width: none; }
 /* Billedet står i sit eget højformat i fuld højde – helt uden overgang. Bredden stopper før logoet i midten. */
+.sidehoved__kredit { position: absolute; right: var(--kant); bottom: 12px; margin: 0; font: 500 .68rem/1 var(--sans); letter-spacing: .04em; color: rgba(255, 255, 255, .7); text-shadow: 0 1px 6px rgba(10, 20, 40, .7); }
 .sidehoved__billede { position: absolute; inset: 0 0 0 auto; z-index: -1; height: 100%; aspect-ratio: 3 / 4; max-width: calc(50% - 64px); }
 .sidehoved__billede img { width: 100%; height: 100%; object-fit: cover; object-position: var(--pos); animation: zoom 2.4s var(--ease) both; }
 
@@ -401,8 +402,8 @@ aside .valg { margin-top: 20px; }
 .sidehoved--fuld .sidehoved__tekst::before { content: ""; position: absolute; z-index: -1; inset: -170px -100vw 0; background: linear-gradient(180deg, rgba(10, 20, 40, 0) 0, rgba(10, 20, 40, .3) 85px, rgba(10, 20, 40, .55) 170px, rgba(10, 20, 40, .68) 100%); mask-image: linear-gradient(90deg, #000 calc(100% - 112vw), transparent calc(100% - 76vw)); }
 @media (max-aspect-ratio: 1/1) { .sidehoved--fuld .sidehoved__billede img { object-position: var(--pos); } }
 /* Den bløde skygge ses ikke på den mørke flade; den holder overskriften læselig dér, hvor den rækker ind over billedet. */
-.sidehoved h1 { font-size: clamp(3.4rem, 9.6vw, 8.8rem); line-height: .88; letter-spacing: -.022em; text-shadow: 0 0 48px rgba(10, 20, 40, .6), 0 0 14px rgba(10, 20, 40, .35); }
-.sidehoved .indled { max-width: min(600px, 44vw); margin-top: clamp(14px, 1.6vw, 22px); color: rgba(255, 255, 255, .84); }
+.sidehoved h1 { font-size: clamp(2.6rem, 6.9vw, 6.3rem); line-height: .88; letter-spacing: -.022em; text-shadow: 0 0 48px rgba(10, 20, 40, .6), 0 0 14px rgba(10, 20, 40, .35); }
+.sidehoved .indled { max-width: min(600px, 44vw); margin-top: clamp(14px, 1.6vw, 22px); font-size: clamp(1rem, 1.3vw, 1.2rem); color: rgba(255, 255, 255, .84); }
 .sidehoved .knap { margin-top: 12px; }
 .sidehoved__tekst > *, .sidehoved__tekst h1 { animation: op 1s var(--ease) both; }
 .sidehoved__tekst > :nth-child(2) { animation-delay: .1s; }
