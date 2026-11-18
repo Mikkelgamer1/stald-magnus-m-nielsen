@@ -232,7 +232,7 @@ a:hover .ud { transform: translate(2px, -2px); }
 .kortraekke { position: relative; display: grid; grid-template-columns: repeat(var(--n, 4), 1fr); /* kolonnerne følger antallet af kort, så rækken altid er fyldt ud */ gap: clamp(16px, 2vw, 32px); }
 .kortraekke--tre { grid-template-columns: repeat(3, 1fr); row-gap: clamp(40px, 5vw, 72px); }
 .kort { display: block; }
-.kort .billede { aspect-ratio: 4 / 5; margin-bottom: 20px; }
+.kort .billede { aspect-ratio: 3 / 4; margin-bottom: 20px; } /* samme format som hestefotoene (3:4), så hele billedet ses – også ørerne */
 .kort h3 { font: 400 clamp(1.5rem, 2vw, 1.85rem)/1.05 var(--serif); letter-spacing: -.01em; transition: color .3s; }
 .kort p { margin-top: 6px; font-size: .86rem; line-height: 1.45; }
 .kort .kort__tal { color: var(--tekst); font-weight: 600; font-variant-numeric: tabular-nums; }
