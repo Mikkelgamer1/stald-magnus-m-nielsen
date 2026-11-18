@@ -390,6 +390,7 @@ aside .valg { margin-top: 20px; }
 .sidehoved--enkel { min-height: 100svh; align-items: center; }
 .sidehoved--enkel .sidehoved__tekst { max-width: none; }
 /* Billedet står i sit eget højformat i fuld højde – helt uden overgang. Bredden stopper før logoet i midten. */
+@media (min-aspect-ratio: 1/1) { .sidehoved--helt { min-height: 0; aspect-ratio: var(--ratio); } }
 .sidehoved__kredit { position: absolute; right: var(--kant); bottom: 12px; margin: 0; font: 500 .68rem/1 var(--sans); letter-spacing: .04em; color: rgba(255, 255, 255, .7); text-shadow: 0 1px 6px rgba(10, 20, 40, .7); }
 .sidehoved__billede { position: absolute; inset: 0 0 0 auto; z-index: -1; height: 100%; aspect-ratio: 3 / 4; max-width: calc(50% - 64px); }
 .sidehoved__billede img { width: 100%; height: 100%; object-fit: cover; object-position: var(--pos); animation: zoom 2.4s var(--ease) both; }

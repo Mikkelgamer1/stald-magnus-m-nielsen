@@ -39,7 +39,8 @@ const BILLEDER = {
   'magnus': [1.413, 600, 1200],
   'magnus-kjeld': [2.127, 800, 1200, 1570], // foto: Kjeld Mikkelsen (brugt med tilladelse)
   'loeb-aalborg': [1.861, 800, 1200, 1500],
-  'fold-fuks': [1.333, 600, 900, 1200, 1800, 2400, 3072], // fuksen alene på folden, staldens Facebook // Magnus bag nr. 3 i Aalborg, staldens Facebook 24.9.2026
+  'fold-fuks': [1.333, 600, 900, 1200, 1800, 2400, 3072], // fuksen alene på folden, staldens Facebook
+  'stald-solnedgang': [1.495, 600, 900, 1200, 1440], // mørk hest i blåt dækken ved stalden i solnedgang, staldens Facebook 20.10.2025 // Magnus bag nr. 3 i Aalborg, staldens Facebook 24.9.2026
   'hest-karat-c-n': [0.75, 560, 900, 3072],
   'hest-cala-karamell': [0.751, 560, 900, 3077],
   'hest-giulia-di-masi': [0.751, 560, 900, 3077],
@@ -311,8 +312,10 @@ ${bund(o)}
 // Sidehoved. Normalt vises hele det høje billede (`billede`) til højre uden noget ovenpå, med teksten ved siden af.
 // Har siden også et bredt billede (`bred`), fylder det hele feltet på liggende skærme med teksten ovenpå.
 // På smalle og stående skærme ligger det høje billede altid bag teksten.
-const sidehoved = ({ oje, h1, tekst, billede, bred, alt, pos = '50% 30%', posBred = '50% 30%', kredit = '' }) => `
-<section class="sidehoved${bred ? ' sidehoved--fuld' : ''}">
+// `helt`: på liggende skærme får sidehovedet samme format som det brede billede, så fotoet ses i fuld størrelse.
+// Et tal under 1 (fx .9) er den del af fotoets højde, der vises – resten skæres af i bunden med posBred '50% 0%'.
+const sidehoved = ({ oje, h1, tekst, billede, bred, alt, pos = '50% 30%', posBred = '50% 30%', kredit = '', helt = false }) => `
+<section class="sidehoved${bred ? ' sidehoved--fuld' : ''}${bred && helt ? ' sidehoved--helt' : ''}"${bred && helt ? ` style="--ratio:${(BILLEDER[bred][0] / (helt === true ? 1 : helt)).toFixed(3)}"` : ''}>
   <picture class="sidehoved__billede" style="--pos:${pos};--pos-bred:${posBred}">${bred ? `
     <source media="(max-aspect-ratio: 1/1)" srcset="${srcset(billede)}" sizes="100vw">` : ''}
     ${img(bred ?? billede, alt, { sizes: bred ? '100vw' : '(min-width: 961px) 50vw, 100vw', lazy: false, pos: null })}
@@ -871,11 +874,12 @@ ${sidehoved({
   oje: 'Kontakt',
   h1: 'Kontakt <em>Magnus</em>',
   tekst: 'Har du en hest, der skal i træning, eller et spørgsmål til stalden? Ring, send en sms eller skriv en mail.',
-  billede: 'hoved-kontakt',
-  bred: 'hoved-kontakt',
-  alt: 'Mørkebrun travhest i staldgangen',
-  pos: '58% 8%',
-  posBred: '50% 3%',
+  billede: 'stald-solnedgang',
+  bred: 'stald-solnedgang',
+  alt: 'Mørk travhest i blåt dækken på pladsen ved stalden i solnedgang',
+  pos: '30% 50%',
+  posBred: '50% 0%',
+  helt: .72,
 })}
 
 <section class="sek">
