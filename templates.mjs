@@ -595,8 +595,10 @@ ${sidehoved({
   h1: 'Om <em>Magnus</em>',
   tekst: `Professionel travtræner og kusk med A1-licens. Født i ${data.traener.foedt} – og med ${esc(data.traener.hjemmebane)} som hjemmebane.`,
   billede: 'stald-sele',
+  bred: 'stald-sele',
   alt: 'Travhest med løbstøj på væddeløbsbanen i Aalborg',
   pos: '55% 20%',
+  posBred: '55% 18%',
 })}
 
 <section class="sek">
@@ -668,6 +670,7 @@ ${sidehoved({
   h1: 'Stalden <em>i Skive</em>',
   tekst: `På Flyvej i Skive – samme vej som hjemmebanen Skive Trav – har ${SITE.navn} ${o.heste.length} heste i træning.`,
   billede: 'hoved-stalden',
+  bred: 'hoved-stalden',
   alt: 'Brun travhest i staldgangen under ovenlysvinduerne',
   pos: '62% 20%',
   posBred: '50% 3%',
@@ -798,8 +801,10 @@ ${sidehoved({
   h1: 'Staldens <em>resultater</em>',
   tekst: `Staldens seneste starter, kommende løb og sæsonens tal. Data kommer fra Dansk Hestevæddeløb og er senest opdateret ${o.opdateret}.`,
   billede: 'aften',
+  bred: 'aften',
   alt: 'Ung travhest på folden i aftenlys',
   pos: '62% 18%',
+  posBred: '50% 14%',
 })}
 
 <section class="sek sek--tone sek--smal sek--taet-bund">
@@ -863,6 +868,7 @@ ${sidehoved({
   h1: 'Kontakt <em>Magnus</em>',
   tekst: 'Har du en hest, der skal i træning, eller et spørgsmål til stalden? Ring, send en sms eller skriv en mail.',
   billede: 'hoved-kontakt',
+  bred: 'hoved-kontakt',
   alt: 'Mørkebrun travhest i staldgangen',
   pos: '58% 8%',
   posBred: '50% 3%',
