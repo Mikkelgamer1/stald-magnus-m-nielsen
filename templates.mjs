@@ -38,7 +38,8 @@ const BILLEDER = {
   'hero': [1.353, 800, 1200, 1461],
   'magnus': [1.413, 600, 1200],
   'magnus-kjeld': [2.127, 800, 1200, 1570], // foto: Kjeld Mikkelsen (brugt med tilladelse)
-  'loeb-aalborg': [1.861, 800, 1200, 1500], // Magnus bag nr. 3 i Aalborg, staldens Facebook 24.9.2026
+  'loeb-aalborg': [1.861, 800, 1200, 1500],
+  'fold-fuks': [1.333, 600, 900, 1200, 1800, 2400, 3072], // fuksen alene på folden, staldens Facebook // Magnus bag nr. 3 i Aalborg, staldens Facebook 24.9.2026
   'hest-karat-c-n': [0.75, 560, 900, 3072],
   'hest-cala-karamell': [0.751, 560, 900, 3077],
   'hest-giulia-di-masi': [0.751, 560, 900, 3077],
@@ -673,11 +674,11 @@ ${sidehoved({
   oje: 'Stalden',
   h1: 'Stalden <em>i Skive</em>',
   tekst: `På Flyvej i Skive – samme vej som hjemmebanen Skive Trav – har ${SITE.navn} ${o.heste.length} heste i træning.`,
-  billede: 'hoved-stalden',
-  bred: 'hoved-stalden',
-  alt: 'Brun travhest i staldgangen under ovenlysvinduerne',
-  pos: '62% 20%',
-  posBred: '50% 3%',
+  billede: 'fold-fuks',
+  bred: 'fold-fuks',
+  alt: 'Fuks på folden ved stalden i solskin',
+  pos: '36% 50%',
+  posBred: '50% 55%',
 })}
 
 <section class="sek">
