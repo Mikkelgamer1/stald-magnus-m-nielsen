@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-17T13:15:43.523Z",
+ "opdateret": "2026-11-18T10:33:50.829Z",
  "traener": {
   "foedt": 2001,
   "hjemmebane": "Skive Trav",
@@ -1951,6 +1951,30 @@
    "hestId": 652343,
    "hest": "Kaiser Faust",
    "kusk": "Casper M. Nielsen"
+  },
+  {
+   "dato": "2026-11-23",
+   "bane": "Sk",
+   "loeb": 1,
+   "hestId": 656534,
+   "hest": "Malik",
+   "kusk": "Mads Hviid"
+  },
+  {
+   "dato": "2026-11-23",
+   "bane": "Sk",
+   "loeb": 2,
+   "hestId": 657122,
+   "hest": "Maserati Flamingo",
+   "kusk": "Casper M. Nielsen"
+  },
+  {
+   "dato": "2026-11-23",
+   "bane": "Sk",
+   "loeb": 3,
+   "hestId": 657848,
+   "hest": "Giovanni (SE)",
+   "kusk": "Birger Jørgensen"
   }
  ]
 }
