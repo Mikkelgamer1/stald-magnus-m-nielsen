@@ -353,6 +353,7 @@ aside .valg { margin-top: 20px; }
 .baand__tekst > * { max-width: 640px; }
 .baand h2 { margin-bottom: 24px; }
 .baand p { color: rgba(255, 255, 255, .86); }
+@media (min-width: 701px) { .baand p { max-width: min(520px, 46vw); } } /* brødteksten holder sig fri af hestens hoved */
 .baand .knap { margin-top: 14px; }
 
 .partnere__gitter { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(16px, 2.4vw, 40px); }
