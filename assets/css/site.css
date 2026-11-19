@@ -219,6 +219,9 @@ a:hover .ud { transform: translate(2px, -2px); }
 
 .kollage { position: relative; padding: 0 0 14% 18%; }
 .kollage__lille { position: absolute; left: 0; bottom: 0; width: 42%; aspect-ratio: 3 / 4; border: clamp(6px, .8vw, 12px) solid var(--taage); }
+/* Samme bløde blå skygge som billedstriben og hestekortene */
+.duo__billede .billede { box-shadow: 0 16px 30px -16px rgba(36, 73, 166, .5), 0 3px 8px -3px rgba(10, 20, 40, .16); }
+.duo__billede .kollage__lille { box-shadow: 0 20px 38px -18px rgba(36, 73, 166, .55), 0 4px 10px -4px rgba(10, 20, 40, .2); }
 
 .ydelser { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(24px, 3.4vw, 56px); margin-top: clamp(56px, 8vw, 112px); }
 .ydelser li { padding-top: 22px; border-top: 1px solid var(--ink); }

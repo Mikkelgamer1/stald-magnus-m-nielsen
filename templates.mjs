@@ -496,7 +496,7 @@ const forside = (o) => `
   </div>
 </section>
 
-<section class="sek sek--tone sek--taet-top">
+<section class="sek sek--tone sek--taet-top sek--taet-bund">
   <div class="wrap">
     <div class="duo duo--omvendt">
       <div class="duo__tekst">
