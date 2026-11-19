@@ -481,7 +481,7 @@ const forside = (o) => `
   </div>
 </section>
 
-<section class="sek">
+<section class="sek sek--taet-bund">
   <div class="wrap duo">
     <div class="duo__billede">
       ${figur('magnus', 'Magnus M. Nielsen i sulkyen med vinderbuket', 'Magnus i staldens farver: blå, grå og hvid.', { sizes: '(min-width: 900px) 38vw, 92vw' })}
@@ -496,7 +496,7 @@ const forside = (o) => `
   </div>
 </section>
 
-<section class="sek sek--tone">
+<section class="sek sek--tone sek--taet-top">
   <div class="wrap">
     <div class="duo duo--omvendt">
       <div class="duo__tekst">
