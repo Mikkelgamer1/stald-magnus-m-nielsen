@@ -484,7 +484,7 @@ const forside = (o) => `
 <section class="sek">
   <div class="wrap duo">
     <div class="duo__billede">
-      ${figur('magnus', 'Magnus M. Nielsen i sulkyen med vinderbuket', 'Magnus M. Nielsen i staldens farver: blå, grå og hvid.', { sizes: '(min-width: 900px) 38vw, 92vw' })}
+      ${figur('magnus', 'Magnus M. Nielsen i sulkyen med vinderbuket', 'Magnus i staldens farver: blå, grå og hvid.', { sizes: '(min-width: 900px) 38vw, 92vw' })}
     </div>
     <div class="duo__tekst">
       <p class="oje" data-vis>Om Magnus</p>
