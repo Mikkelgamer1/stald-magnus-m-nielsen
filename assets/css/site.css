@@ -232,11 +232,12 @@ a:hover .ud { transform: translate(2px, -2px); }
 .kortraekke { position: relative; display: grid; grid-template-columns: repeat(var(--n, 4), 1fr); /* kolonnerne følger antallet af kort, så rækken altid er fyldt ud */ gap: clamp(16px, 2vw, 32px); }
 .kortraekke--tre { grid-template-columns: repeat(3, 1fr); row-gap: clamp(40px, 5vw, 72px); }
 .kort { display: block; }
-.kort .billede { aspect-ratio: 3 / 4; margin-bottom: 20px; } /* samme format som hestefotoene (3:4), så hele billedet ses – også ørerne */
+.kort .billede { aspect-ratio: 3 / 4; margin-bottom: 20px; box-shadow: 0 16px 30px -16px rgba(36, 73, 166, .5), 0 3px 8px -3px rgba(10, 20, 40, .16); transition: box-shadow .35s var(--ease); } /* samme format som hestefotoene (3:4), så hele billedet ses – også ørerne */
 .kort h3 { font: 400 clamp(1.5rem, 2vw, 1.85rem)/1.05 var(--serif); letter-spacing: -.01em; transition: color .3s; }
 .kort p { margin-top: 6px; font-size: .86rem; line-height: 1.45; }
 .kort .kort__tal { color: var(--tekst); font-weight: 600; font-variant-numeric: tabular-nums; }
 .kort:hover .billede img { transform: scale(1.045); }
+.kort:hover .billede { box-shadow: 0 22px 40px -18px rgba(36, 73, 166, .6), 0 4px 10px -4px rgba(10, 20, 40, .18); }
 .kort:hover h3 { color: var(--blaa); }
 
 /* ---------- resultater ---------- */
@@ -296,14 +297,14 @@ aside .valg { margin-top: 20px; }
 /* Billedstriben: fem billeder side om side inden for sidens bredde (pc), alle syv kan swipes (mobil) */
 .film { padding-block: clamp(14px, 2vw, 32px); background: var(--lys-kant); }
 .film__spor { display: grid; grid-template-columns: repeat(5, 1fr); gap: clamp(10px, 1.4vw, 20px); width: min(100% - 2 * var(--kant), var(--max)); margin-inline: auto; }
-.film__spor li { aspect-ratio: 3 / 4; overflow: hidden; }
+.film__spor li { aspect-ratio: 3 / 4; overflow: hidden; box-shadow: 0 16px 30px -16px rgba(36, 73, 166, .5), 0 3px 8px -3px rgba(10, 20, 40, .16); } /* blød skygge i staldens blå */
 .film__spor li:nth-child(n + 6) { display: none; }
 .film__spor img { width: 100%; height: 100%; object-fit: cover; }
 .film + .sek { padding-top: clamp(36px, 4vw, 60px); } /* mindre luft lige efter billedstriben */
 @media (max-width: 900px) {
   .film { overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: var(--kant); scrollbar-width: none; }
   .film::-webkit-scrollbar { display: none; }
-  .film__spor { display: flex; width: max-content; margin: 0; padding-inline: var(--kant); }
+  .film__spor { display: flex; width: max-content; margin: 0; padding-inline: var(--kant); padding-bottom: 26px; } /* plads til skyggen i den vandrette rulning */
   .film__spor li, .film__spor li:nth-child(n + 6) { display: block; flex: none; width: clamp(200px, 62vw, 320px); scroll-snap-align: start; }
 }
 
