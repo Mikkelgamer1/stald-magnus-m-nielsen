@@ -151,7 +151,7 @@ a:hover .ud { transform: translate(2px, -2px); }
 .hero .oje { margin-bottom: clamp(8px, 1vw, 14px); color: #fff; text-shadow: 0 1px 10px rgba(10, 20, 40, .6); }
 .hero__navn { display: block; font-size: clamp(3rem, 5.3vw, 4.8rem); line-height: .86; letter-spacing: -.022em; text-shadow: 0 2px 4px rgba(10, 20, 40, .5), 0 8px 34px rgba(10, 20, 40, .72), 0 0 90px rgba(10, 20, 40, .68); }
 .hero__titel { display: block; margin-top: clamp(6px, .8vw, 12px); font: italic 400 clamp(1.4rem, 2.2vw, 2.05rem)/1.1 var(--serif); letter-spacing: 0; color: rgba(255, 255, 255, .95); text-shadow: 0 1px 2px rgba(10, 20, 40, .4), 0 2px 18px rgba(10, 20, 40, .6); }
-.hero__indled { max-width: 520px; margin-top: clamp(10px, 1.1vw, 16px); font-size: clamp(1.02rem, 1.25vw, 1.15rem); color: rgba(255, 255, 255, .9); text-shadow: 0 1px 2px rgba(10, 20, 40, .4), 0 2px 14px rgba(10, 20, 40, .55); }
+.hero__indled { max-width: 520px; margin-top: clamp(5px, .55vw, 8px); font-size: clamp(1.02rem, 1.25vw, 1.15rem); color: rgba(255, 255, 255, .9); text-shadow: 0 1px 2px rgba(10, 20, 40, .4), 0 2px 14px rgba(10, 20, 40, .55); }
 .hero__valg { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 32px; margin-top: clamp(10px, 1vw, 15px); }
 .hero__tekst > :not(h1), .hero h1 > span { animation: op 1.1s var(--ease) both; animation-delay: calc(var(--i, 0) * 120ms + 250ms); }
 
