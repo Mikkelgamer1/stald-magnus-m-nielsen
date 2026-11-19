@@ -478,6 +478,18 @@ p.hest__tal--tom { display: block; font-size: .9rem; }
 .kontakt__stor a:hover { color: var(--blaa); }
 .kontakt address { margin-bottom: 22px; font: 400 clamp(1.5rem, 2.2vw, 1.9rem)/1.25 var(--serif); }
 .kontakt__links { display: flex; flex-wrap: wrap; gap: 4px 28px; }
+/* Følg stalden: store kort med ikon, kanal og pil – fylder feltet og bliver mørke ved hover */
+.folg { display: grid; gap: 14px; margin-top: 6px; }
+.folg a { display: grid; grid-template-columns: 52px minmax(0, 1fr) 40px; align-items: center; gap: 18px; padding: 14px 16px 14px 14px; background: #fff; border: 1px solid var(--linje); box-shadow: var(--skygge); transition: background .35s var(--ease), color .35s, transform .35s var(--ease); }
+.folg__ikon { display: grid; place-items: center; width: 52px; height: 52px; background: var(--ink); color: #fff; transition: background .35s; }
+.folg__ikon svg { width: 24px; height: 24px; }
+.folg__tekst > span { display: block; margin-bottom: 6px; font: 600 .68rem/1 var(--sans); font-stretch: 90%; letter-spacing: .18em; text-transform: uppercase; color: var(--staal); transition: color .35s; }
+.folg__tekst b { display: block; font: 400 clamp(1.1rem, 1.5vw, 1.4rem)/1.15 var(--serif); overflow-wrap: anywhere; }
+.folg__pil { display: grid; place-items: center; width: 40px; height: 40px; border: 1px solid var(--linje); border-radius: 50%; transition: border-color .35s; }
+.folg a:hover { background: var(--ink); color: #fff; transform: translateY(-2px); }
+.folg a:hover .folg__ikon { background: var(--blaa); }
+.folg a:hover .folg__tekst > span { color: var(--blaa-lys); }
+.folg a:hover .folg__pil { border-color: rgba(255, 255, 255, .3); }
 .kontakt__felt--kort { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 250px); gap: 24px; align-items: center; }
 
 /* ---------- bund ---------- */

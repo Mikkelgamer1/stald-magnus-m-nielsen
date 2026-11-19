@@ -905,10 +905,13 @@ ${sidehoved({
     </div>
     <div class="kontakt__felt" data-vis style="--i:3">
       <h2 class="oje">Følg stalden</h2>
-      <ul class="kontakt__links">
-        <li>${ekstern(SITE.facebook, 'Facebook')}</li>
-        <li>${ekstern(SITE.instagram, 'Instagram')}</li>
-        <li>${ekstern(SITE.travinfo, 'Travinfo')}</li>
+      <ul class="folg">
+        ${[
+          [SITE.facebook, 'Facebook', SITE.navn, '<path d="M13.6 21v-7.7h2.6l.4-3h-3V8.4c0-.9.3-1.5 1.5-1.5h1.6V4.2c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.9v3h2.6V21z" fill="currentColor"/>'],
+          [SITE.instagram, 'Instagram', '@stald_magnusmnielsen', '<rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/>'],
+          [SITE.travinfo, 'Travinfo', 'Resultater og statistik', '<circle cx="12" cy="13.5" r="7" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 13.5V9.5M10 3h4M18.5 6.5l1.3-1.3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>'],
+        ].map(([href, kanal, navn, ikon]) => `
+        <li><a href="${href}" target="_blank" rel="noopener"><span class="folg__ikon"><svg viewBox="0 0 24 24" aria-hidden="true">${ikon}</svg></span><span class="folg__tekst"><span>${kanal}</span><b>${esc(navn)}</b></span><span class="folg__pil">${ud}</span>${nyFane}</a></li>`).join('')}
       </ul>
     </div>
   </div>
