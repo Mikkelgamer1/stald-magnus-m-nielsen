@@ -26,6 +26,7 @@
 
   --kant: clamp(20px, 4.6vw, 72px);
   --luft: clamp(60px, 7.2vw, 116px);
+  --skygge: 0 16px 30px -16px rgba(36, 73, 166, .5), 0 3px 8px -3px rgba(10, 20, 40, .16); /* blød skygge i staldens blå bag fotos */
   --spalte: clamp(20px, 3vw, 48px);
   --max: 1400px;
   --top-fuld: 112px;       /* toppens højde øverst på siden */
@@ -220,7 +221,7 @@ a:hover .ud { transform: translate(2px, -2px); }
 .kollage { position: relative; padding: 0 0 14% 18%; }
 .kollage__lille { position: absolute; left: 0; bottom: 0; width: 42%; aspect-ratio: 3 / 4; border: clamp(6px, .8vw, 12px) solid var(--taage); }
 /* Samme bløde blå skygge som billedstriben og hestekortene */
-.duo__billede .billede { box-shadow: 0 16px 30px -16px rgba(36, 73, 166, .5), 0 3px 8px -3px rgba(10, 20, 40, .16); }
+.duo__billede .billede { box-shadow: var(--skygge); }
 .duo__billede .kollage__lille { box-shadow: 0 20px 38px -18px rgba(36, 73, 166, .55), 0 4px 10px -4px rgba(10, 20, 40, .2); }
 
 .ydelser { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(24px, 3.4vw, 56px); margin-top: clamp(56px, 8vw, 112px); }
@@ -235,7 +236,7 @@ a:hover .ud { transform: translate(2px, -2px); }
 .kortraekke { position: relative; display: grid; grid-template-columns: repeat(var(--n, 4), 1fr); /* kolonnerne følger antallet af kort, så rækken altid er fyldt ud */ gap: clamp(16px, 2vw, 32px); }
 .kortraekke--tre { grid-template-columns: repeat(3, 1fr); row-gap: clamp(40px, 5vw, 72px); }
 .kort { display: block; }
-.kort .billede { aspect-ratio: 3 / 4; margin-bottom: 20px; box-shadow: 0 16px 30px -16px rgba(36, 73, 166, .5), 0 3px 8px -3px rgba(10, 20, 40, .16); transition: box-shadow .35s var(--ease); } /* samme format som hestefotoene (3:4), så hele billedet ses – også ørerne */
+.kort .billede { aspect-ratio: 3 / 4; margin-bottom: 20px; box-shadow: var(--skygge); transition: box-shadow .35s var(--ease); } /* samme format som hestefotoene (3:4), så hele billedet ses – også ørerne */
 .kort h3 { font: 400 clamp(1.5rem, 2vw, 1.85rem)/1.05 var(--serif); letter-spacing: -.01em; transition: color .3s; }
 .kort p { margin-top: 6px; font-size: .86rem; line-height: 1.45; }
 .kort .kort__tal { color: var(--tekst); font-weight: 600; font-variant-numeric: tabular-nums; }
@@ -300,7 +301,7 @@ aside .valg { margin-top: 20px; }
 /* Billedstriben: fem billeder side om side inden for sidens bredde (pc), alle syv kan swipes (mobil) */
 .film { padding-block: clamp(14px, 2vw, 32px); background: var(--lys-kant); }
 .film__spor { display: grid; grid-template-columns: repeat(5, 1fr); gap: clamp(10px, 1.4vw, 20px); width: min(100% - 2 * var(--kant), var(--max)); margin-inline: auto; }
-.film__spor li { aspect-ratio: 3 / 4; overflow: hidden; box-shadow: 0 16px 30px -16px rgba(36, 73, 166, .5), 0 3px 8px -3px rgba(10, 20, 40, .16); } /* blød skygge i staldens blå */
+.film__spor li { aspect-ratio: 3 / 4; overflow: hidden; box-shadow: var(--skygge); } /* blød skygge i staldens blå */
 .film__spor li:nth-child(n + 6) { display: none; }
 .film__spor img { width: 100%; height: 100%; object-fit: cover; }
 .film + .sek { padding-top: clamp(36px, 4vw, 60px); } /* mindre luft lige efter billedstriben */
@@ -442,6 +443,7 @@ aside .valg { margin-top: 20px; }
 .galleri .figur { break-inside: avoid; margin-bottom: clamp(14px, 2vw, 32px); }
 .galleri .figur:nth-child(4) { padding-top: clamp(24px, 5vw, 80px); }
 .galleri figcaption { margin-top: 10px; padding-bottom: 8px; }
+.galleri .billede { box-shadow: var(--skygge); }
 
 .adresser { margin-top: clamp(32px, 4vw, 56px); border-top: 1px solid var(--ink); }
 .adresser div { padding: clamp(22px, 2.6vw, 34px) 0; border-bottom: 1px solid var(--linje); }

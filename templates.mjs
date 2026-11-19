@@ -41,6 +41,7 @@ const BILLEDER = {
   'loeb-aalborg': [1.861, 800, 1200, 1500],
   'fold-fuks': [1.333, 600, 900, 1200, 1800, 2400, 3072], // fuksen alene på folden, staldens Facebook
   'stald-solnedgang': [1.495, 600, 900, 1200, 1440], // mørk hest i blåt dækken ved stalden i solnedgang, staldens Facebook 20.10.2025 // Magnus bag nr. 3 i Aalborg, staldens Facebook 24.9.2026
+  'loeb-nr3-aarhus': [1.399, 800, 1200, 1600, 2000], // Magnus bag nr. 3 på Jydsk Væddeløbsbane, sendt af Mikkel
   'hest-karat-c-n': [0.75, 560, 900, 3072],
   'hest-cala-karamell': [0.751, 560, 900, 3077],
   'hest-giulia-di-masi': [0.751, 560, 900, 3077],
@@ -545,7 +546,7 @@ const forside = (o) => `
 </section>
 
 <section class="sek--mork resbane">
-  <div class="resbane__billede">${img('stald-sele', 'Travhest med løbstøj på væddeløbsbanen i Aalborg', { pos: '62% 6%' })}</div>
+  <div class="resbane__billede">${img('loeb-nr3-aarhus', 'Magnus M. Nielsen i sulkyen bag travhest nr. 3 i fuld fart på Jydsk Væddeløbsbane', { pos: '50% 48%' })}</div>
   <div class="wrap duo duo--top">
     <div class="duo__tekst">
       <p class="oje" data-vis>Resultater</p>
