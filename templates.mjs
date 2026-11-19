@@ -286,7 +286,7 @@ ${noindex ? '<meta name="robots" content="noindex">' : '<link rel="canonical" hr
 <meta property="og:url" content="${kanonisk}">
 <meta property="og:image" content="${SITE.url}/assets/img/og.jpg">
 <meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:image:height" content="887">
 <meta property="og:image:alt" content="Magnus M. Nielsen i sulkyen bag en travhest i fuld fart">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" sizes="48x48" href="${R}assets/img/ikon-48.png">
