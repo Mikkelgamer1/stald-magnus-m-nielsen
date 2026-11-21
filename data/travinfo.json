@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-20T12:49:05.790Z",
+ "opdateret": "2026-11-21T12:34:37.103Z",
  "traener": {
   "foedt": 2001,
   "hjemmebane": "Skive Trav",
@@ -9,7 +9,7 @@
  "traenerStatistik": [
   {
    "aar": 2026,
-   "starter": 94,
+   "starter": 95,
    "sejre": 17,
    "toer": 10,
    "treer": 12,
@@ -112,7 +112,7 @@
    "starter": 10,
    "placeringer": "3-2-2",
    "praemier": 86820,
-   "rekord": "16,7m 15,6ak *15,2am"
+   "rekord": "16,7m *15,2am"
   },
   {
    "id": 659474,
@@ -174,7 +174,7 @@
    "foedt": "2021-04-16",
    "far": "Great Challenger (US)",
    "mor": "Rigoletto",
-   "starter": 33,
+   "starter": 34,
    "placeringer": "10-4-1",
    "praemier": 127000,
    "rekord": "15,0m *15,8ak *14,3am *15,4al"
@@ -350,6 +350,18 @@
   }
  ],
  "resultater": [
+  {
+   "id": "838366-652343",
+   "dato": "2026-11-20",
+   "bane": "Od",
+   "loeb": 4,
+   "hestId": 652343,
+   "hest": "Kaiser Faust",
+   "placering": "0",
+   "tid": "16,4ag",
+   "distance": 2140,
+   "praemie": 0
+  },
   {
    "id": "838317-656446",
    "dato": "2026-11-18",
@@ -1948,14 +1960,6 @@
   }
  ],
  "kommende": [
-  {
-   "dato": "2026-11-20",
-   "bane": "Od",
-   "loeb": 4,
-   "hestId": 652343,
-   "hest": "Kaiser Faust",
-   "kusk": "Casper M. Nielsen"
-  },
   {
    "dato": "2026-11-23",
    "bane": "Sk",
