@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-22T12:31:12.040Z",
+ "opdateret": "2026-11-23T14:30:22.056Z",
  "traener": {
   "foedt": 2001,
   "hjemmebane": "Skive Trav",
@@ -193,19 +193,6 @@
    "rekord": "18,7k 14,3m 12,9ak *12,2am *12,6al"
   },
   {
-   "id": 656446,
-   "navn": "Let's Run Kåsgård",
-   "alder": 4,
-   "koen": "Hoppe",
-   "foedt": "2022-05-06",
-   "far": "Ens Snapshot (US)",
-   "mor": "Rositta Kåsgård",
-   "starter": 23,
-   "placeringer": "2-1-3",
-   "praemier": 48400,
-   "rekord": "*20,1k 18,7m 15,5ak 14,6am"
-  },
-  {
    "id": 656534,
    "navn": "Malik",
    "alder": 3,
@@ -291,32 +278,6 @@
    "foedt": "2024-03-23",
    "far": "Readly Express (SE)",
    "mor": "Calamara Donna (SE)",
-   "starter": 0,
-   "placeringer": "0-0-0",
-   "praemier": 0,
-   "rekord": ""
-  },
-  {
-   "id": 658574,
-   "navn": "Nobel Egedal",
-   "alder": 2,
-   "koen": "Vallak",
-   "foedt": "2024-07-22",
-   "far": "Wishing Stone (US)",
-   "mor": "Gry Egedal",
-   "starter": 0,
-   "placeringer": "0-0-0",
-   "praemier": 0,
-   "rekord": ""
-  },
-  {
-   "id": 658573,
-   "navn": "Novo Egedal",
-   "alder": 2,
-   "koen": "Vallak",
-   "foedt": "2024-05-09",
-   "far": "Great Challenger (US)",
-   "mor": "Parant Zet (SE)",
    "starter": 0,
    "placeringer": "0-0-0",
    "praemier": 0,
