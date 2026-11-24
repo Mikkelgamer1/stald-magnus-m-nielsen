@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-23T14:30:22.056Z",
+ "opdateret": "2026-11-24T12:24:32.205Z",
  "traener": {
   "foedt": 2001,
   "hjemmebane": "Skive Trav",
@@ -9,12 +9,12 @@
  "traenerStatistik": [
   {
    "aar": 2026,
-   "starter": 95,
+   "starter": 98,
    "sejre": 17,
-   "toer": 10,
+   "toer": 11,
    "treer": 12,
-   "procent": 18,
-   "praemier": 394500
+   "procent": 17,
+   "praemier": 399500
   },
   {
    "aar": 2025,
@@ -109,10 +109,10 @@
    "foedt": "2022-03-29",
    "far": "Bold Eagle (FR)",
    "mor": "She Has It (US)",
-   "starter": 10,
-   "placeringer": "3-2-2",
-   "praemier": 86820,
-   "rekord": "16,7m *15,2am"
+   "starter": 11,
+   "placeringer": "3-3-2",
+   "praemier": 91820,
+   "rekord": "16,7m 14,4am"
   },
   {
    "id": 659474,
@@ -200,7 +200,7 @@
    "foedt": "2023-04-28",
    "far": "Ens Snapshot (US)",
    "mor": "Væsterbo Minx (SE)",
-   "starter": 2,
+   "starter": 3,
    "placeringer": "0-0-0",
    "praemier": 0,
    "rekord": "21,8m"
@@ -226,7 +226,7 @@
    "foedt": "2023-05-15",
    "far": "Ens Snapshot (US)",
    "mor": "Petra Skov",
-   "starter": 18,
+   "starter": 19,
    "placeringer": "1-1-2",
    "praemier": 34250,
    "rekord": "16,6ak 16,9am"
@@ -311,6 +311,42 @@
   }
  ],
  "resultater": [
+  {
+   "id": "838379-657848",
+   "dato": "2026-11-23",
+   "bane": "Sk",
+   "loeb": 3,
+   "hestId": 657848,
+   "hest": "Giovanni (SE)",
+   "placering": "2",
+   "tid": "14,4a",
+   "distance": 2060,
+   "praemie": 5000
+  },
+  {
+   "id": "838387-657122",
+   "dato": "2026-11-23",
+   "bane": "Sk",
+   "loeb": 2,
+   "hestId": 657122,
+   "hest": "Maserati Flamingo",
+   "placering": "d",
+   "tid": "ga",
+   "distance": 2060,
+   "praemie": 0
+  },
+  {
+   "id": "838375-656534",
+   "dato": "2026-11-23",
+   "bane": "Sk",
+   "loeb": 1,
+   "hestId": 656534,
+   "hest": "Malik",
+   "placering": "d",
+   "tid": "g4",
+   "distance": 2000,
+   "praemie": 0
+  },
   {
    "id": "838366-652343",
    "dato": "2026-11-20",
@@ -1922,28 +1958,12 @@
  ],
  "kommende": [
   {
-   "dato": "2026-11-23",
+   "dato": "2026-11-30",
    "bane": "Sk",
-   "loeb": 1,
-   "hestId": 656534,
-   "hest": "Malik",
-   "kusk": "Mads Hviid"
-  },
-  {
-   "dato": "2026-11-23",
-   "bane": "Sk",
-   "loeb": 2,
-   "hestId": 657122,
-   "hest": "Maserati Flamingo",
-   "kusk": "Casper M. Nielsen"
-  },
-  {
-   "dato": "2026-11-23",
-   "bane": "Sk",
-   "loeb": 3,
-   "hestId": 657848,
-   "hest": "Giovanni (SE)",
-   "kusk": "Birger Jørgensen"
+   "loeb": 91,
+   "hestId": 659427,
+   "hest": "Nicely Music (SE)",
+   "kusk": "Magnus M. Nielsen"
   }
  ]
 }
