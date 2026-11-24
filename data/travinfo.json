@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-24T12:24:32.205Z",
+ "opdateret": "2026-11-24T14:48:06.919Z",
  "traener": {
   "foedt": 2001,
   "hjemmebane": "Skive Trav",
@@ -1957,6 +1957,14 @@
   }
  ],
  "kommende": [
+  {
+   "dato": "2026-11-30",
+   "bane": "Sk",
+   "loeb": 2,
+   "hestId": 657122,
+   "hest": "Maserati Flamingo",
+   "kusk": "Magnus M. Nielsen"
+  },
   {
    "dato": "2026-11-30",
    "bane": "Sk",
