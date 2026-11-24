@@ -509,6 +509,12 @@ p.hest__tal--tom { display: block; font-size: .9rem; }
 .bund__linje { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 32px; padding-block: 22px; border-top: 1px solid rgba(255, 255, 255, .12); font-size: .78rem; color: rgba(255, 255, 255, .6); }
 .bund__linje p + p { margin: 0; }
 .bund__linje a { display: inline-flex; align-items: center; gap: 6px; padding-block: 10px; margin-block: -10px; color: rgba(255, 255, 255, .85); }
+/* Diskret kreditering af Niveo: lille ordmærke, som man kan klikke på */
+.bund__linje .bund__niveo { margin-left: auto; } /* står til højre under copyright-linjen */
+.bund__niveo a { gap: 5px; color: rgba(255, 255, 255, .55); transition: color .3s; }
+.bund__niveo img { width: auto; height: 12px; opacity: .85; transition: opacity .3s; }
+.bund__niveo a:hover { color: var(--blaa-lys); }
+.bund__niveo a:hover img { opacity: 1; }
 
 /* ---------- bevægelse ---------- */
 

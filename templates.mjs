@@ -231,6 +231,7 @@ const bund = (o) => `
     <p>Hjemmebane: ${ekstern(SITE.skiveTrav, 'Skive Trav', '')}</p>
     <p>Resultater og statistik: Dansk Hestevæddeløb · opdateret ${o.opdateret}</p>
     <p>© ${new Date().getFullYear()} ${SITE.navn} · ${SITE.firma} · CVR ${SITE.cvr}</p>
+    <p class="bund__niveo"><a href="https://niveo.dk" target="_blank" rel="noopener">Hjemmeside af <img src="${R}assets/img/niveo-logo.webp" width="1400" height="299" alt="Niveo" loading="lazy" decoding="async">${nyFane}</a></p>
   </div>
 </footer>`;
 
