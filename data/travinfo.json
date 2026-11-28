@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-27T13:47:21.288Z",
+ "opdateret": "2026-11-28T12:55:35.063Z",
  "traener": {
   "foedt": 2001,
   "hjemmebane": "Skive Trav",
@@ -56,12 +56,12 @@
  "kuskStatistik": [
   {
    "aar": 2026,
-   "starter": 217,
+   "starter": 220,
    "sejre": 37,
-   "toer": 29,
+   "toer": 30,
    "treer": 23,
    "procent": 17,
-   "praemier": 808928
+   "praemier": 818428
   },
   {
    "aar": 2025,
